@@ -1,0 +1,123 @@
+{
+ "n": 120,
+ "moves": [
+  {
+   "tag": "intro.gap.new-surface",
+   "papers": 9,
+   "n": 120,
+   "median_pos": 0.13
+  },
+  {
+   "tag": "intro.gap.failure",
+   "papers": 9,
+   "n": 120,
+   "median_pos": null
+  },
+  {
+   "tag": "intro.gap.assumption",
+   "papers": 4,
+   "n": 120,
+   "median_pos": null
+  },
+  {
+   "tag": "intro.attacker",
+   "papers": 3,
+   "n": 120,
+   "median_pos": null
+  },
+  {
+   "tag": "intro.gap.cost",
+   "papers": 2,
+   "n": 120,
+   "median_pos": null
+  },
+  {
+   "tag": "intro.gap.scale",
+   "papers": 1,
+   "n": 120,
+   "median_pos": null
+  },
+  {
+   "tag": "intro.method",
+   "papers": 1,
+   "n": 120,
+   "median_pos": null
+  }
+ ],
+ "quotes": {
+  "intro.gap.new-surface": [
+   [
+    "NDSS",
+    "2023",
+    "To this end, this paper provides an initial analysis of client-side request forgery attacks that directly emerge from the QUIC protocol design and not from common vulnerabilities."
+   ],
+   [
+    "NDSS",
+    "2026",
+    "For such an emerging ecosystem, the security community lacks sufficient understanding of the LLM application ecosystem, especially regarding the capability boundaries of the applic"
+   ]
+  ],
+  "intro.gap.failure": [
+   [
+    "NDSS",
+    "2025",
+    "However, existing rule-based systems suffer low detection accuracy, especially the high false alarms, due to the lack of fine-grained rules and environmentspecific configurations."
+   ],
+   [
+    "NDSS",
+    "2026",
+    "Existing QUIC testing tools primarily focus on memory-related vulnerabilities and are illequipped to detect logical vulnerabilities."
+   ]
+  ],
+  "intro.gap.assumption": [
+   [
+    "NDSS",
+    "2026",
+    "Existing studies predominantly analyze jailbreak prompts by probing latent representations, often overlooking the causal relationships between interpretable prompt features and jai"
+   ],
+   [
+    "SP",
+    "2026",
+    "These researchers need privacy-preserving methods that maintain the accuracy of the conclusions drawn from datasets, conclusions that impact real people through education policies,"
+   ]
+  ],
+  "intro.attacker": [
+   [
+    "NDSS",
+    "2026",
+    "Heavy–hitter detection underpins line-rate DDoS mitigation and rate-limiting, yet its resilience against adaptive adversaries is largely unexplored."
+   ],
+   [
+    "SP",
+    "2026",
+    "While prior keystroke inference techniques have exploited sidechannel signals such as acoustics and vibrations, they typically rely on conspicuous, short-range sensors and require "
+   ]
+  ],
+  "intro.gap.cost": [
+   [
+    "SP",
+    "2024",
+    "Differential privacy (DP) has the potential to enable privacy-preserving analysis on sensitive data, but requires analysts to judiciously spend a limited “privacy loss budget” ϵ ac"
+   ],
+   [
+    "USENIX",
+    "2026",
+    "To mitigate privacy leakage, existing methods often involve perturbing sensitive information, which can unfortunately degrade the accuracy of video understanding tasks, especially "
+   ]
+  ],
+  "intro.gap.scale": [
+   [
+    "USENIX",
+    "2023",
+    "Existing anomaly detection systems perform all traffic detection on the control plane, which struggles to scale to the growing rates of traffic."
+   ]
+  ],
+  "intro.method": [
+   [
+    "USENIX",
+    "2025",
+    "Recent attacks rely on hammering multiple banks or keeping rows activated for long durations."
+   ]
+  ]
+ }
+}

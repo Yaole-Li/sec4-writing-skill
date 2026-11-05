@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.pdf
+data/text/
+template/*/*.aux
+template/*/*.log
+template/*/*.out
+template/*/*.bbl
+template/*/*.blg
+
+# Never ship the extracted full text of published papers, nor scratch files from the annotation batches.
+data/corpus.jsonl
+data/text/
+data/annot/scratch/
+data/annot/seq_input.jsonl

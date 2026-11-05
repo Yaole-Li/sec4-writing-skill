@@ -1,0 +1,17 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{usenixlike}[2024/01/01 Local stand-in for usenix2019_v3]
+\makeatletter
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\columnsep}{0.75in}
+\pagestyle{empty}
+\renewcommand{\section}{\@startsection{section}{1}{0pt}{2.0ex plus .5ex minus .2ex}{1.0ex plus .2ex}{\normalfont\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}{1.5ex plus .3ex minus .2ex}{.6ex plus .1ex}{\normalfont\bfseries}}
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{0pt}{1.0ex plus .2ex minus .1ex}{.4ex}{\normalfont\scshape}}
+\renewenvironment{abstract}{\small\noindent\textbf{Abstract.}\quad}{\par\vspace{1ex}}
+\makeatother

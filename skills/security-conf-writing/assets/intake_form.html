@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>安全顶会论文信息表</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#16181d;--muted:#6b7280;--line:#e3e6ec;--accent:#0b5cad;--gold:#b8860b;--warn:#b45309;--err:#b91c1c}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1c1f25;--ink:#e8eaef;--muted:#9aa3b2;--line:#2b303a;--accent:#6aa9ff;--gold:#e0b34a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:12px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+h1{font-size:17px;margin:0;flex:1}
+button{font:inherit;padding:6px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;cursor:pointer}
+button.primary{background:var(--accent);color:#fff;border-color:transparent}
+button:hover{filter:brightness(.97)}
+.bars{display:flex;gap:10px;font-size:12px;color:var(--muted)}
+.bars i{display:inline-block;width:56px;height:6px;border-radius:3px;background:var(--line);margin-right:4px;vertical-align:middle}
+.bars b{color:var(--ink)}
+main{max-width:900px;margin:0 auto;padding:20px 16px 80px}
+.intro{color:var(--muted);font-size:13.5px}
+section.tier{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+section.tier h2{font-size:15px;margin:0 0 4px;display:flex;gap:8px;align-items:center}
+.badge{font-size:11.5px;color:var(--gold);border:1px solid currentColor;border-radius:999px;padding:1px 8px}
+.desc{color:var(--muted);font-size:12.5px;margin:0 0 12px}
+.row{margin:12px 0}
+.row>label{display:block;font-weight:600;font-size:13.5px;margin-bottom:4px}
+.req>label::after{content:" *";color:var(--err)}
+.hint{color:var(--muted);font-size:12px;margin:2px 0 4px}
+input[type=text],textarea,select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+textarea{min-height:64px;resize:vertical}
+textarea.big{min-height:120px}
+.checks{display:flex;flex-wrap:wrap;gap:10px}
+.checks label{font-weight:400;font-size:13px;display:flex;gap:6px;align-items:center}
+.group{border:1px dashed var(--line);border-radius:10px;padding:10px;margin:8px 0}
+.group h4{margin:0 0 8px;font-size:13px;color:var(--muted);font-weight:600}
+.subhead{margin:18px 0 6px;font-size:13px;color:var(--muted);font-weight:600;border-top:1px dashed var(--line);padding-top:10px}
+[hidden]{display:none!important}
+#report{font-size:13px}
+#report li{margin:4px 0}
+.ok{color:var(--accent)}
+.miss{color:var(--warn)}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:8px;opacity:0;transition:.2s;pointer-events:none}
+#toast.on{opacity:.94}
+footer{color:var(--muted);font-size:12px;margin-top:18px}
+</style>
+</head>
+<body>
+<header>
+  <h1>安全顶会论文信息表</h1>
+  <div class="bars" id="bars"></div>
+  <button id="btnImport">导入 JSON</button>
+  <button id="btnCheck">检查缺项</button>
+  <button class="primary" id="btnExport">导出 JSON</button>
+  <input type="file" id="file" accept=".json,application/json" hidden>
+</header>
+<main>
+<p class="intro">填写这篇工作的事实，导出 JSON 交给 <b>security-conf-writing</b>。必填 5 项；⭐ 推荐 8 项决定底稿像不像 TIFS 论文，缺了 skill 会先追问一次；其余按需补充。数字、数据集、基线和攻击者能力没有给出的，skill 只会标 <code>[TODO]</code>，不会编造。内容只保存在本机浏览器。</p>
+
+<section class="tier" id="form"></section>
+<section class="tier" id="reportBox" hidden><h2>缺项检查</h2><div id="report"></div></section>
+
+<footer>导出的 JSON 可直接用 <code>python3 scripts/intake_to_brief.py 文件名.json --out brief.md</code> 转成写作简报；每一条数字都要求带设置（数据集、指标、基线）。</footer>
+</main>
+<div id="toast"></div>
+
+<script>
+const SCHEMA="sec4-intake/v1", AUTO="让 skill 判断";
+const VENUES=["SP（IEEE S&P）","USENIX Security","NDSS","CCS（ACM）"];
+const TYPES=[AUTO,"A1 攻击（新的攻击者能力）","A2 防护机制（检测、缓解、隐私保护）","A3 测量研究","A4 系统 / 平台","A5 分析或形式化构造","A6 SoK（系统化整理与再评估）","A7 数据集 / 基准 / 测试床"];
+const MOTIVES=[AUTO,"new-surface 新技术带来尚未被审视的威胁面","failure 现有防护在特定条件下失效","assumption-gap 威胁模型假设不再成立","cost 太慢、太贵、不可用","capability-gap 根本做不到","scale-gap 只在实验环境成立","insight 一个观察让复杂设计变得没必要"];
+const DIRS=["↑ 越高越好","↓ 越低越好"];
+const SECTIONS=["Title","Abstract","Introduction","Related Work","Threat Model","Design","Evaluation","Ethics","Open Science","Conclusion"];
+const RELEASE=["代码","模型权重","数据集","基准","攻击脚本","在线 demo"];
+const DIFF=["机制不同","适用范围不同","代价不同","假设不同","输入不同","输出不同","评测不同"];
+
+const BLOCKS=[
+{id:"meta",title:"基本设置",desc:"决定目标与要写哪些部分。",fields:[
+ {sec:"meta",k:"working_name",label:"系统 / 攻击 / 数据集名称",type:"text",eg:"CAMEO；BARS"},
+ {sec:"meta",k:"venue",label:"目标会议与年份",type:"select",options:VENUES},
+ {sec:"meta",k:"paper_type",label:"论文类型",type:"select",options:TYPES},
+ {sec:"meta",k:"sections",label:"需要写哪些部分",type:"checks",options:SECTIONS,store:"array",def:SECTIONS}
+]},
+{id:"req",lvl:"req",title:"必填",badge:"5 项",desc:"填完这 5 项就能导出，skill 能写出完整底稿。",fields:[
+ {sec:"required",k:"one_line",label:"一句话说清这篇工作",type:"textarea",req:true,hint:"做了什么、达到什么、为什么能做到。",eg:"把社交平台账号识别表述为侧信道信息定位，用受控访问学到稀疏锚点，并以免重训的原型注册支持监控集扩展。"},
+ {sec:"required",k:"task",label:"任务：输入 → 输出，谁受威胁",type:"textarea",req:true,eg:"输入被动观测到的加密流量元数据，输出这次访问命中哪个被监控账号；用于评估账号级隐私泄漏。"},
+ {sec:"required",k:"failure",label:"现有方法在什么情况下失效（看得见的现象）",type:"textarea",req:true,hint:"写条件与现象，不要写“现有方法有局限”。",eg:"同模板账号共享前端与 API 端点，判别信息退化为少数流量源里的稀疏位置，按页面结构做识别的方法六站全部掉点。"},
+ {sec:"required",k:"threat",label:"威胁模型：攻击者目标 / 知识 / 能力 / 不在范围内的攻击",type:"textarea",req:true,hint:"安全顶会审稿人先读这一段。写清目标、知识、能力与不在范围内的攻击。",eg:"ISP 处的被动观测者，只看包长、方向与时序，不解密、不修改、不注入；离线阶段可用自有浏览器导出的 TLS 密钥，在线阶段只用密文元数据。"},
+ {sec:"required",k:"results",label:"头条结果（1–3 个）",type:"group",item:"结果",hint:"没有数字也请写出对比设置；数字可先空着。",sub:[
+   {k:"benchmark",label:"数据集 / 场景",type:"text",eg:"六个社交平台"},
+   {k:"metric",label:"指标",type:"text",eg:"open-world F1"},
+   {k:"dir",label:"方向",type:"select",options:DIRS},
+   {k:"baseline",label:"对比方法与其数值",type:"text",eg:"最强基线 45.11%"},
+   {k:"ours",label:"我们的数值",type:"text",eg:"85.96%"},
+   {k:"where",label:"表 / 图编号",type:"text",eg:"Table III"}]}
+]},
+{id:"rec",lvl:"rec",title:"推荐填写",badge:"⭐ 8 项",desc:"TIFS 论文与普通论文的差距主要在这里。没填的项 skill 会先追问一次，问不到就写 [TODO]。",fields:[
+ {sec:"required",k:"prior_best",label:"现有最强防护 / 攻击是怎么做到的",type:"textarea",rec:true,hint:"写机制，不只写名字。",eg:"Oscar 用突发结构对整条 trace 做表示，在每个页面上训练一个分类头，不做位置定位。"},
+ {sec:"required",k:"failure_reason",label:"失效的技术原因（被打破的那个假设）",type:"textarea",rec:true,hint:"这一句通常成为引言的支点。",eg:"它们假设判别信息在整条 trace 上广泛分布，同模板账号之间这个假设不成立。"},
+ {sec:"required",k:"insight",label:"核心观察：关于问题本身的判断",type:"textarea",rec:true,hint:"写问题的什么性质让你的设计成立。",eg:"账号身份信息集中在少数流量源内的稀疏位置，且这些位置是平台属性，与监控集无关。"},
+ {sec:"required",k:"closest",label:"最相近的工作（1–3 个）与差异",type:"group",item:"相近工作",sub:[
+   {k:"name",label:"名称",type:"text",eg:"DE-GNN"},
+   {k:"diff_type",label:"差异类型",type:"select",options:DIFF},
+   {k:"difference",label:"具体差异",type:"text",eg:"它不做位置定位，我们先用受控访问定位锚点再编码"},
+   {k:"bibkey",label:"bib key",type:"text",eg:"deng2023degnn"}]},
+ {sec:"enhancers",k:"example",label:"一个具体画面",type:"textarea",rec:true,hint:"一条真实流量、一次成功攻击、一个截图或一个惊人数字。",eg:"屏蔽 SNI 后 Bsky 仍达 93.28%，说明判别信息来自加密结构而非主机名。"},
+ {sec:"enhancers",k:"overhead",label:"代价：时延 / 显存 / 带宽 / 查询次数 / 用户可用性",type:"textarea",rec:true,eg:"单条 trace 推断时延 [TODO]；发现阶段一次性开销 [TODO]"},
+ {sec:"enhancers",k:"surprising",label:"意外或反直觉之处",type:"textarea",rec:true},
+ {sec:"enhancers",k:"handle",label:"团队内部对核心想法的叫法",type:"text",rec:true,hint:"区别于系统名；可能会进标题。"}
+]},
+{id:"opt",lvl:"opt",fold:true,title:"补充信息",badge:"可选",desc:"让措辞更准确、引用更完整。",fields:[
+ {sec:"enhancers",k:"applications",label:"能接入哪些现有管线、支持哪些输入、带来哪些新应用",type:"textarea"},
+ {sec:"enhancers",k:"paper_type",label:"论文类型",type:"select",options:TYPES},
+ {sec:"enhancers",k:"motivation",label:"缺口类型",type:"select",options:MOTIVES},
+ {sec:"enhancers",k:"ethics",label:"伦理与披露：审批 / 知情同意 / 数据处置 / 责任披露 / 双重用途",type:"textarea",hint:"USENIX 必写；涉及人、真实流量、线上系统或漏洞时四个顶会都期望写。"},
+ {sec:"enhancers",k:"openscience",label:"开源与工件：发布什么、在哪、什么许可、保留什么",type:"textarea",hint:"USENIX 必写；CCS 走 artifact 徽章。"},
+ {sec:"support",k:"secondary",label:"次要结果与消融发现",type:"textarea"},
+ {sec:"support",k:"release",label:"会开源哪些内容",type:"checks",options:RELEASE,store:"string"},
+ {sec:"support",k:"limitations",label:"局限与失败条件",type:"textarea",hint:"不会写进摘要，用于把握措辞，并整理进 Limitations。"},
+ {sec:"support",k:"materials",label:"其他材料与要求",type:"textarea",cls:"big",hint:"粘贴幻灯片文字、组会笔记、相关工作清单或额外要求。"},
+ {sec:"support",k:"bib",label:"refs.bib 内容",type:"textarea",cls:"big",hint:"粘贴 BibTeX；没有的话引用会以 [TODO: cite …] 标出。"}
+]},
+{id:"me",lvl:"opt",fold:true,title:"方法与实验",badge:"可选",desc:"写 Method 与 Experiments 时使用。最省事的是把材料整个粘进第一个框。",fields:[
+ {sec:"methodexp",k:"paste",label:"直接粘贴方法与实验材料",type:"textarea",cls:"big",hint:"方法说明、公式、主结果表（CSV / Markdown / LaTeX 均可）、消融、实现细节。"},
+ {subhead:"逐项填写（可选，越详细越好）",sec:"methodexp",k:"setting",label:"问题设定与符号",type:"textarea"},
+ {sec:"methodexp",k:"base_model",label:"基于或修改的已有模型，以及保持不变的部分",type:"textarea"},
+ {sec:"methodexp",k:"overview",label:"整体流程（输入 → 各组件 → 输出）",type:"textarea"},
+ {sec:"methodexp",k:"components",label:"方法组件（每个一条）",type:"group",item:"组件",hint:"需要什么 → 怎么做 → 为什么有效。",sub:[
+   {k:"name",label:"名称",type:"text"},
+   {k:"need",label:"它解决什么问题",type:"text"},
+   {k:"mechanism",label:"怎么做（公式、伪代码）",type:"text"},
+   {k:"property",label:"为什么有效 / 保证什么性质",type:"text"}]},
+ {sec:"methodexp",k:"objective",label:"训练目标、优化与推理流程",type:"textarea"},
+ {sec:"methodexp",k:"implementation",label:"实现细节",type:"textarea"},
+ {sec:"methodexp",k:"datasets",label:"数据集",type:"group",item:"数据集",sub:[
+   {k:"name",label:"名称",type:"text"},{k:"size",label:"规模与划分",type:"text"},{k:"why",label:"为什么选它",type:"text"}]},
+ {sec:"methodexp",k:"metrics",label:"评价指标",type:"group",item:"指标",sub:[
+   {k:"name",label:"指标",type:"text"},{k:"dir",label:"方向",type:"select",options:DIRS}]},
+ {sec:"methodexp",k:"baselines",label:"对比方法",type:"group",item:"对比方法",sub:[
+   {k:"name",label:"名称",type:"text"},{k:"bibkey",label:"bib key",type:"text"},{k:"how",label:"如何运行",type:"text"}]},
+ {sec:"methodexp",k:"adaptive_attacks",label:"自适应攻击与鲁棒性设定",type:"textarea",hint:"跑了哪些自适应攻击、结果如何；没跑就写原因。"},
+ {sec:"methodexp",k:"limitations",label:"失败条件与未覆盖的攻击",type:"textarea"}
+]}
+];
+
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+let state={}, open={};
+
+function el(tag,attrs={},kids=[]){const n=document.createElement(tag);for(const[k,v]of Object.entries(attrs)){if(k==="class")n.className=v;else if(k==="html")n.innerHTML=v;else n.setAttribute(k,v);}for(const c of[].concat(kids))n.append(c);return n;}
+
+function field(f){
+  const row=el("div",{class:"row"+(f.req?" req":"")});
+  row.append(el("label",{html:f.label+(f.rec?' <span class="badge">⭐</span>':"")}));
+  if(f.hint)row.append(el("div",{class:"hint",html:f.hint}));
+  if(f.type==="textarea"){const t=el("textarea",{class:f.cls||"",rows:(f.cls==="big"?6:3),"data-sec":f.sec,"data-k":f.k,"data-t":"text"});t.placeholder=f.eg||"";row.append(t);}
+  else if(f.type==="text"){const t=el("input",{type:"text","data-sec":f.sec,"data-k":f.k,"data-t":"text"});t.placeholder=f.eg||"";row.append(t);}
+  else if(f.type==="select"){const s=el("select",{"data-sec":f.sec,"data-k":f.k,"data-t":"select"});f.options.forEach(o=>s.append(el("option",{value:o},o)));row.append(s);}
+  else if(f.type==="checks"){const w=el("div",{class:"checks","data-sec":f.sec,"data-k":f.k,"data-t":"checks","data-store":f.store||"array","data-def":(f.def||[]).join("|")});f.options.forEach(o=>{const id=f.k+"_"+o.replace(/\W+/g,"");const cb=el("input",{type:"checkbox",id,value:o});w.append(el("label",{for:id},[cb,o]));});row.append(w);}
+  else if(f.type==="group"){const g=el("div",{class:"group","data-sec":f.sec,"data-k":f.k,"data-t":"group"});g.append(el("h4",{},f.item+"（可加多行）"));const list=el("div",{class:"glist"});g.append(list);const add=el("button",{type:"button",class:"add"},["+ 增加一行"]);add.onclick=()=>{list.append(groupRow(f));save();};g.append(add);row.append(g);list.append(groupRow(f));}
+  return row;
+}
+function groupRow(f){const box=el("div",{class:"group","data-row":"1"});f.sub.forEach(s=>{const r=el("div",{class:"row"});r.append(el("label",{},s.label));let inp;if(s.type==="select"){inp=el("select",{"data-f":s.k,"data-t":"select"});inp.append(el("option",{value:""},"—"));s.options.forEach(o=>inp.append(el("option",{value:o},o)));}else{inp=el("input",{type:"text","data-f":s.k,"data-t":"text"});inp.placeholder=s.eg||"";}r.append(inp);box.append(r);});const del=el("button",{type:"button"},["删除这一行"]);del.onclick=()=>{box.remove();save();};box.append(del);return box;}
+
+function render(){
+  const host=$("#form");host.innerHTML="";
+  BLOCKS.forEach(b=>{
+    const sec=el("section",{class:"tier"});
+    const h=el("h2",{},[b.title]);if(b.badge)h.append(el("span",{class:"badge"},b.badge));
+    if(b.fold){const t=el("button",{type:"button"},[open[b.id]?"收起 ▴":"展开 ▾"]);t.onclick=()=>{open[b.id]=!open[b.id];render();};h.append(t);}
+    sec.append(h);if(b.desc)sec.append(el("div",{class:"desc"},b.desc));
+    if(b.fold&&!open[b.id]){host.append(sec);return;}
+    b.fields.forEach(f=>{if(f.subhead)sec.append(el("div",{class:"subhead"},f.subhead));sec.append(field(f));});
+    host.append(sec);
+  });
+  restore();
+  paint();
+}
+function collect(){
+  const out={schema:SCHEMA,meta:{},required:{},enhancers:{},support:{},methodexp:{}};
+  $$("#form [data-sec]").forEach(node=>{
+    const sec=node.dataset.sec,k=node.dataset.k,t=node.dataset.t,target=out[sec]||(out[sec]={});
+    if(t==="group"){
+      const rows=$$("[data-row]",node).map(r=>{const o={};$$("[data-f]",r).forEach(i=>{const v=i.value.trim();if(v&&v!==AUTO)o[i.dataset.f]=v;});return Object.keys(o).length?o:null;}).filter(Boolean);
+      if(rows.length)target[k]=rows;
+    } else if(t==="checks"){
+      const vals=$$("input:checked",node).map(i=>i.value);
+      if(node.dataset.store==="string"){if(vals.length)target[k]=vals.join(", ");}
+      else if(vals.length&&vals.join("|")!==node.dataset.def)target[k]=vals;
+    } else {
+      const v=node.value.trim();
+      if(v)target[k]=(v===AUTO?undefined:v);
+    }
+  });
+  Object.keys(out).forEach(s=>{if(!out[s]||!Object.keys(out[s]).length)delete out[s];});
+  return out;
+}
+function paint(){
+  const d=collect();
+  (d.meta?.sections||SECTIONS);
+  $$("#form [data-t]").forEach(node=>{
+    const sec=node.dataset.sec,k=node.dataset.k,v=(state[sec]||{})[k];
+    if(node.dataset.t==="group"){if(Array.isArray(v)&&v.length){const list=$(".glist",node);list.innerHTML="";const f=BLOCKS.flatMap(b=>b.fields).find(x=>x.sec===sec&&x.k===k);v.forEach(row=>{const box=groupRow(f);$$("[data-f]",box).forEach(i=>{if(row[i.dataset.f]!==undefined)i.value=row[i.dataset.f];});list.append(box);});}}
+    else if(node.dataset.t==="checks"){
+      const def=(node.dataset.def||"").split("|").filter(Boolean);
+      const has=v!==undefined&&v!==null&&v!==""&&!(Array.isArray(v)&&!v.length);
+      if(!has&&def.length){$$("input",node).forEach(i=>i.checked=def.includes(i.value));return;}
+      $$("input",node).forEach(i=>i.checked=(Array.isArray(v)&&v.includes(i.value))||(typeof v==="string"&&v.includes(i.value)));
+    }
+    else if(v!=null&&typeof v==="object"){if(node.dataset.t==="select")node.value=v.value||AUTO;else node.value=v.value||"";}
+    else if(v!=null)node.value=v;
+  });
+  count();
+}
+function count(){
+  const d=collect(),r=d.required||{};
+  const need=["one_line","task","failure","threat","results"].filter(k=>!r[k]||(Array.isArray(r[k])&&!r[k].length));
+  $("#bars").innerHTML=`<span><i style="background:${need.length?'var(--warn)':'var(--accent)'}"></i>必填 <b>${5-need.length}/5</b></span>`;
+}
+function save(){state=collect();try{localStorage.setItem("tifs-intake",JSON.stringify(state));}catch(e){}count();}
+function restore(){try{const s=localStorage.getItem("tifs-intake");if(s)state=JSON.parse(s);}catch(e){}}
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),1400);}
+
+document.addEventListener("input",save);
+document.addEventListener("change",save);
+$("#btnExport").onclick=()=>{
+  const d=collect();
+  const blob=new Blob([JSON.stringify(d,null,1)],{type:"application/json"});
+  const a=el("a",{href:URL.createObjectURL(blob),download:"tifs-intake.json"});document.body.append(a);a.click();a.remove();toast("已导出 tifs-intake.json");
+};
+$("#btnImport").onclick=()=>$("#file").click();
+$("#file").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();render();toast("已导入");}catch(x){toast("JSON 读取失败");}};r.readAsText(f);};
+$("#btnCheck").onclick=()=>{
+  const d=collect(),r=d.required||{},miss=[];
+  const need={one_line:"一句话说清工作",task:"任务",failure:"失效现象",threat:"威胁模型",results:"头条结果"};
+  Object.entries(need).forEach(([k,label])=>{if(!r[k]||(Array.isArray(r[k])&&!r[k].length))miss.push("必填："+label);});
+  const rec={prior_best:"现有最强方法",failure_reason:"失效的技术原因",insight:"核心观察",closest:"最相近工作",example:"具体画面",overhead:"代价",surprising:"反直觉之处",handle:"内部叫法"};
+  Object.entries(rec).forEach(([k,label])=>{if(!r[k]&&(d.enhancers||{})[k]===undefined)miss.push("推荐："+label);});
+  const box=$("#reportBox"),rep=$("#report");box.hidden=false;
+  rep.innerHTML=miss.length?"<ul>"+miss.map(m=>`<li class="${m.startsWith('必填')?'':'miss'}">${m}</li>`).join("")+"</ul>":"<p class='ok'>必填与推荐项都已填写，可以导出。</p>";
+  box.scrollIntoView({behavior:"smooth",block:"center"});
+};
+
+render();
+count();
+</script>
+</body>
+</html>

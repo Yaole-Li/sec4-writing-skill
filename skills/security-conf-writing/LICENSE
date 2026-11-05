@@ -1,0 +1,16 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 the tifs-paper-writing authors
+
+You are free to share and adapt this material for any purpose, provided you give appropriate credit.
+
+Original content of this repository (documents, scripts, template scaffolding, statistics) is licensed
+under CC BY 4.0. Two exceptions:
+
+1. Quoted sentences in skills/tifs-paper-writing/references/exemplars/ are short excerpts from published
+   papers, quoted with attribution for commentary and teaching. Copyright remains with their authors.
+   Do not copy them into a manuscript.
+2. template/TIFS/ uses IEEEtran.cls and IEEEtran.bst, which carry the LaTeX Project Public License and
+   the IEEEtran licence respectively; they are not redistributed here.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode

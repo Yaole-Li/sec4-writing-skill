@@ -1,0 +1,269 @@
+id,venue,year,title,pages,figures,tables,abstract_words,abstract_ok,role
+2023-NDSS-a-robust-counting-sketch-for-data-plane-intrusion-detection,NDSS,2023,A Robust Counting Sketch for Data Plane Intrusion Detection,17,17,4,273,yes,fit
+2023-NDSS-bars-local-robustness-certification-for-deep-learning-based-,NDSS,2023,BARS: Local Robustness Certification for Deep Learning based Traffic Analysis Systems,18,10,15,192,yes,fit
+2023-NDSS-detecting-unknown-encrypted-malicious-traffic-in-real-time-v,NDSS,2023,Detecting Unknown Encrypted Malicious Traffic in Real Time via Flow Interaction Graph Analysis,18,17,9,279,yes,fit
+2023-NDSS-him-of-many-faces-characterizing-billion-scale-adversarial-a,NDSS,2023,Him of Many Faces: Characterizing Billion-scale Adversarial and Benign Browser Fingerprints on Commercial Webs,16,7,17,199,yes,held-out
+2023-NDSS-quicforge-client-side-request-forgery-in-quic,NDSS,2023,QUICforge: Client-side Request Forgery in QUIC,14,15,1,171,yes,fit
+2023-NDSS-sometimes-you-arent-what-you-do-mimicry-attacks-against-prov,NDSS,2023,"Sometimes, You Arent What You Do: Mimicry Attacks against Provenance Graph Host Intrusion Detection Systems",18,10,12,183,yes,fit
+2024-NDSS-flow-correlation-attacks-on-tor-onion-service-sessions-with-,NDSS,2024,Flow Correlation Attacks on Tor Onion Service Sessions with Sliding Subset Sum,20,20,13,164,yes,fit
+2024-NDSS-low-quality-training-data-only-a-robust-framework-for-detect,NDSS,2024,Low-Quality Training Data Only A Robust Framework for Detecting Encrypted Malicious Network Traffic,18,12,17,218,yes,fit
+2024-NDSS-mirageflow-a-new-bandwidth-inflation-attack-on-tor,NDSS,2024,MirageFlow: A New Bandwidth Inflation Attack on Tor,16,11,1,260,yes,fit
+2025-NDSS-a-multifaceted-study-on-the-use-of-tls-and-auto-detect-in-em,NDSS,2025,A Multifaceted Study on the Use of TLS and Auto-detect in Email Ecosystems,18,5,18,240,yes,fit
+2025-NDSS-from-large-to-mammoth-a-comparative-evaluation-of-large-lang,NDSS,2025,From Large to Mammoth: A Comparative Evaluation of Large Language Models in Vulnerability Detection,18,6,9,196,yes,fit
+2025-NDSS-generating-api-parameter-security-rules-with-llm-for-api-mis,NDSS,2025,Generating API Parameter Security Rules with LLM for API Misuse Detection,18,15,11,483,yes,fit
+2025-NDSS-i-know-what-you-asked-prompt-leakage-via-kv-cache-sharing-in,NDSS,2025,I Know What You Asked: Prompt Leakage via KV-Cache Sharing in Multi-Tenant LLM Serving,15,12,4,186,yes,fit
+2025-NDSS-i-know-what-you-meme-understanding-and-detecting-harmful-mem,NDSS,2025,I know what you MEME Understanding and Detecting Harmful Memes with Multimodal Large Language Models,18,11,17,282,yes,held-out
+2025-NDSS-incorporating-gradients-to-rules-towards-lightweight-adaptiv,NDSS,2025,"Incorporating Gradients to Rules: Towards Lightweight, Adaptive Provenance-based Intrusion Detection",18,9,12,195,yes,fit
+2025-NDSS-isolategpt-an-execution-isolation-architecture-for-llm-based,NDSS,2025,IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems,20,10,5,227,yes,fit
+2025-NDSS-off-path-tcp-hijacking-in-wi-fi-networks-a-packet-size-side-,NDSS,2025,Off-Path TCP Hijacking in Wi-Fi Networks: A Packet-Size Side Channel Attack,17,10,6,246,yes,fit
+2025-NDSS-privacy-preserving-data-deduplication-for-enhancing-federate,NDSS,2025,Privacy-Preserving Data Deduplication for Enhancing Federated Learning of Language Models,20,8,9,152,yes,fit
+2025-NDSS-the-midas-touch-triggering-the-capability-of-llms-for-rm-api,NDSS,2025,The Midas Touch: Triggering the Capability of LLMs for RM-API Misuse Detection,17,21,6,469,yes,fit
+2026-NDSS-a-causal-perspective-for-enhancing-jailbreak-attack-and-defe,NDSS,2026,A Causal Perspective for Enhancing Jailbreak Attack and Defense,18,9,15,254,yes,fit
+2026-NDSS-a-hard-label-black-box-evasion-attack-against-ml-based-malic,NDSS,2026,A Hard-Label Black-Box Evasion Attack against ML-based Malicious Traffic Detection Systems,18,14,7,229,yes,fit
+2026-NDSS-ace-a-security-architecture-for-llm-integrated-app-systems,NDSS,2026,ACE: A Security Architecture for LLM-Integrated App Systems,18,12,5,254,yes,fit
+2026-NDSS-acts-attestations-of-contents-in-tls-sessions,NDSS,2026,ACTS: Attestations of Contents in TLS Sessions,18,10,1,343,yes,fit
+2026-NDSS-an-llm-driven-fuzzing-framework-for-detecting-logic-instruct,NDSS,2026,An LLM-Driven Fuzzing Framework for Detecting Logic Instruction Bugs in PLCs,17,13,8,181,yes,fit
+2026-NDSS-attention-is-all-you-need-to-defend-against-indirect-prompt-,NDSS,2026,Attention is All You Need to Defend Against Indirect Prompt Injection Attacks in LLMs,18,9,15,156,yes,fit
+2026-NDSS-beyond-jailbreak-unveiling-risks-in-llm-applications-arising,NDSS,2026,Beyond Jailbreak: Unveiling Risks in LLM Applications Arising from Blurred Capability Boundaries,18,17,3,251,yes,fit
+2026-NDSS-bleeding-pathways-vanishing-discriminability-in-llm-hidden-s,NDSS,2026,Bleeding Pathways: Vanishing Discriminability in LLM Hidden States Fuels Jailbreak Attacks,18,7,14,295,yes,fit
+2026-NDSS-cache-me-catch-you-cache-related-security-threats-in-llm-ser,NDSS,2026,"Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks",18,13,3,215,yes,fit
+2026-NDSS-cease-at-the-ultimate-goodness-towards-efficient-website-fin,NDSS,2026,Cease at the Ultimate Goodness: Towards Efficient Website Fingerprinting Defense via Iterative Mutual Informat,20,13,15,237,yes,fit
+2026-NDSS-cellshift-rtt-aware-trace-transduction-for-real-world-websit,NDSS,2026,CELLSHIFT: RTT-Aware Trace Transduction for Real-World Website Fingerprinting,18,6,6,175,yes,fit
+2026-NDSS-chameleoscan-demystifying-and-detecting-ios-chameleon-apps-v,NDSS,2026,CHAMELEOSCAN: Demystifying and Detecting iOS Chameleon Apps via LLM-Powered UI Exploration,20,13,9,897,yes,fit
+2026-NDSS-chasing-shadows-pitfalls-in-llm-security-research,NDSS,2026,Chasing Shadows: Pitfalls in LLM Security Research,19,5,4,184,yes,fit
+2026-NDSS-chimera-harnessing-multi-agent-llms-for-automatic-insider-th,NDSS,2026,Chimera: Harnessing Multi-Agent LLMs for Automatic Insider Threat Simulation,17,8,9,252,yes,fit
+2026-NDSS-cold-collaborative-label-denoising-framework-for-network-int,NDSS,2026,CoLD: Collaborative Label Denoising Framework for Network Intrusion Detection,18,11,8,184,yes,fit
+2026-NDSS-enhancing-website-fingerprinting-attacks-against-traffic-dri,NDSS,2026,Enhancing Website Fingerprinting Attacks against Traffic Drift,18,11,11,336,yes,fit
+2026-NDSS-entente-cross-silo-intrusion-detection-on-network-log-graphs,NDSS,2026,Entente: Cross-silo Intrusion Detection on Network Log Graphs with Federated Learning,19,3,10,227,yes,fit
+2026-NDSS-expshield-safeguarding-web-text-from-unauthorized-crawling-a,NDSS,2026,ExpShield: Safeguarding Web Text from Unauthorized Crawling and LLM Exploitation,18,16,12,342,yes,fit
+2026-NDSS-firmagent-leveraging-fuzzing-to-assist-llm-agents-with-iot-f,NDSS,2026,FirmAgent: Leveraging Fuzzing to Assist LLM Agents with IoT Firmware Vulnerability Discovery,16,11,10,192,yes,fit
+2026-NDSS-identifying-logical-vulnerabilities-in-quic-implementations,NDSS,2026,Identifying Logical Vulnerabilities in QUIC Implementations,18,5,3,172,yes,fit
+2026-NDSS-les-dissonances-cross-tool-harvesting-and-polluting-in-pool-,NDSS,2026,Les Dissonances: Cross-Tool Harvesting and Polluting in Pool-of-Tools Empowered LLM Agents,20,6,8,166,yes,fit
+2026-NDSS-lightening-the-load-a-cluster-based-framework-for-a-lower-ov,NDSS,2026,"Lightening the Load: A Cluster-Based Framework for A Lower-Overhead, Provable Website Fingerprinting Defense",18,10,13,182,yes,held-out
+2026-NDSS-neurostrike-neuron-level-attacks-on-aligned-llms,NDSS,2026,NeuroStrike: Neuron-Level Attacks on Aligned LLMs,20,8,16,252,yes,fit
+2026-NDSS-obliinjection-order-oblivious-prompt-injection-attack-to-llm,NDSS,2026,ObliInjection: Order-Oblivious Prompt Injection Attack to LLM Agents with Multi-source Data,18,5,18,234,yes,held-out
+2026-NDSS-paladin-defending-llm-enabled-phishing-emails-with-a-new-tri,NDSS,2026,Paladin: Defending LLM-enabled Phishing Emails with a New Trigger-Tag Paradigm,20,6,6,235,yes,fit
+2026-NDSS-prompt-injection-attack-to-tool-selection-in-llm-agents,NDSS,2026,Prompt Injection Attack to Tool Selection in LLM Agents,18,12,18,171,yes,fit
+2026-NDSS-protocolguard-detecting-protocol-non-compliance-bugs-via-llm,NDSS,2026,ProtocolGuard: Detecting Protocol Non-compliance Bugs via LLM-guided Static Analysis and Dynamic Verification,18,3,9,306,yes,held-out
+2026-NDSS-q-mllm-vector-quantization-for-robust-multimodal-large-langu,NDSS,2026,Q-MLLM: Vector Quantization for Robust Multimodal Large Language Model Security,18,6,10,188,yes,fit
+2026-NDSS-saga-a-security-architecture-for-governing-ai-agentic-system,NDSS,2026,SAGA: A Security Architecture for Governing AI Agentic Systems,18,9,3,206,yes,fit
+2026-NDSS-shadow-in-the-cache-unveiling-and-mitigating-privacy-risks-o,NDSS,2026,Shadow in the Cache: Unveiling and Mitigating Privacy Risks of KV-cache in LLM Inference,18,9,15,168,yes,fit
+2026-NDSS-strategic-games-and-zero-shot-attacks-on-heavy-hitter-networ,NDSS,2026,Strategic Games and Zero Shot Attacks on Heavy-Hitter Network Flow Monitoring,18,16,9,203,yes,fit
+2026-NDSS-thinktrap-denial-of-service-attacks-against-black-box-llm-se,NDSS,2026,ThinkTrap: Denial-of-Service Attacks against Black-box LLM Services via Infinite Thinking,14,7,2,248,yes,fit
+2026-NDSS-tipso-gan-malicious-network-traffic-detection-using-a-novel-,NDSS,2026,TIPSO-GAN: Malicious Network Traffic Detection Using a Novel Optimized Generative Adversarial Network,20,16,21,229,yes,held-out
+2026-NDSS-verilora-fine-tuning-large-language-models-with-verifiable-s,NDSS,2026,VeriLoRA: Fine-Tuning Large Language Models with Verifiable Security via Zero-Knowledge Proofs,16,2,1,169,yes,fit
+2026-NDSS-vigtext-deepfake-image-detection-with-vision-language-model-,NDSS,2026,ViGText: Deepfake Image Detection with Vision-Language Model Explanations and Graph Neural Networks,17,12,20,304,yes,fit
+2026-NDSS-what-do-they-fix-llm-aided-categorization-of-security-patche,NDSS,2026,What Do They Fix LLM-Aided Categorization of Security Patches for Critical Memory Bugs,18,17,7,313,yes,fit
+2026-NDSS-wifinger-fingerprinting-noisy-iot-event-traffic-using-packet,NDSS,2026,WiFinger: Fingerprinting Noisy IoT Event Traffic Using Packet-level Sequence Matching,18,19,7,173,yes,fit
+2026-NDSS-xr-devices-send-wifi-packets-when-they-should-not-cross-buil,NDSS,2026,XR Devices Send WiFi Packets When They Should Not: Cross-Building Keylogging Attacks via Non-Cooperative Wirel,17,21,8,314,yes,fit
+2023-SP-from-5g-sniffing-to-harvesting-leakages-of-privacy-preservin,SP,2023,From 5G Sniffing to Harvesting Leakages of Privacy-Preserving Messengers,16,10,1,202,yes,fit
+2023-SP-robust-multi-tab-website-fingerprinting-attacks-in-the-wild,SP,2023,Robust Multi-tab Website Fingerprinting Attacks in the Wild,18,15,9,181,yes,fit
+2023-SP-sok-a-critical-evaluation-of-efficient-website-fingerprintin,SP,2023,SoK A Critical Evaluation of Efficient Website Fingerprinting Defenses,18,4,12,133,yes,fit
+2023-SP-telepath-a-minecraft-based-covert-communication-system,SP,2023,Telepath A Minecraft-based Covert Communication System,15,18,2,399,yes,fit
+2024-SP-baffle-hiding-backdoors-in-offline-reinforcement-learning-da,SP,2024,Baffle Hiding Backdoors in Offline Reinforcement Learning Datasets,19,6,8,278,yes,fit
+2024-SP-cerberus-enabling-efficient-and-effective-in-network-monitor,SP,2024,Cerberus Enabling Efficient and Effective In-Network Monitoring on Programmable Switches,16,18,2,618,yes,fit
+2024-SP-dpi-ensuring-strict-differential-privacy-for-infinite-data-s,SP,2024,DPI Ensuring Strict Differential Privacy for Infinite Data Streaming,19,15,3,475,yes,fit
+2024-SP-from-chatbots-to-phishbots-phishing-scam-generation-in-comme,SP,2024,From Chatbots to Phishbots Phishing Scam Generation in Commercial Large Language Models,19,15,13,275,yes,fit
+2024-SP-llmif-augmented-large-language-model-for-fuzzing-iot-devices,SP,2024,LLMIF Augmented Large Language Model for Fuzzing IoT Devices,16,8,5,547,yes,fit
+2024-SP-llms-cannot-reliably-identify-and-reason-about-security-vuln,SP,2024,LLMs Cannot Reliably Identify and Reason About Security Vulnerabilities (Yet) A Comprehensive Evalu,19,11,29,160,yes,fit
+2024-SP-measure-observe-remeasure-an-interactive-paradigm-for-differ,SP,2024,Measure-Observe-Remeasure An Interactive Paradigm for Differentially-Private Exploratory Analysis,18,6,1,234,yes,fit
+2024-SP-on-large-language-models-resilience-to-coercive-interrogatio,SP,2024,On Large Language Models Resilience to Coercive Interrogation,19,7,6,229,yes,fit
+2024-SP-poisoned-chatgpt-finds-work-for-idle-hands-exploring-develop,SP,2024,Poisoned ChatGPT Finds Work for Idle Hands Exploring Developers Coding Practices with Insecure Sugg,19,13,2,281,yes,fit
+2024-SP-promptcare-prompt-copyright-protection-by-watermark-injectio,SP,2024,PromptCARE Prompt Copyright Protection by Watermark Injection and Verification,17,9,14,515,yes,fit
+2024-SP-real-time-website-fingerprinting-defense-via-traffic-cluster,SP,2024,Real-Time Website Fingerprinting Defense via Traffic Cluster Anonymization,19,15,17,543,yes,held-out
+2024-SP-specious-sites-tracking-the-spread-and-sway-of-spurious-news,SP,2024,Specious Sites Tracking the Spread and Sway of Spurious News Stories at Scale,19,7,10,347,yes,fit
+2024-SP-the-role-of-user-agent-interactions-on-mobile-money-practice,SP,2024,The Role of User-Agent Interactions on Mobile Money Practices in Kenya and Tanzania,18,4,5,212,yes,fit
+2025-SP-a-big-step-forward-a-user-centric-examination-of-ios-app-pri,SP,2025,A Big Step Forward A User-Centric Examination of iOS App Privacy Report and Enhancements,19,9,3,216,yes,fit
+2025-SP-alleviating-the-fear-of-losing-alignment-in-llm-fine-tuning,SP,2025,Alleviating the Fear of Losing Alignment in LLM Fine-tuning,19,7,20,361,yes,fit
+2025-SP-analyzing-ad-prevalence-characteristics-and-compliance-in-al,SP,2025,"Analyzing Ad Prevalence, Characteristics, and Compliance in Alexa Skills",19,5,5,257,yes,held-out
+2025-SP-bait-large-language-model-backdoor-scanning-by-inverting-att,SP,2025,BAIT Large Language Model Backdoor Scanning by Inverting Attack Target,19,10,8,244,yes,fit
+2025-SP-codebreaker-dynamic-extraction-attacks-on-code-language-mode,SP,2025,Codebreaker Dynamic Extraction Attacks on Code Language Models,17,6,9,514,yes,fit
+2025-SP-comet-accelerating-private-inference-for-large-language-mode,SP,2025,Comet Accelerating Private Inference for Large Language Model by Predicting Activation Sparsity,19,19,7,182,yes,fit
+2025-SP-countmamba-a-generalized-website-fingerprinting-attack-via-c,SP,2025,Countmamba A Generalized Website Fingerprinting Attack via Coarse-Grained Representation and Fine-G,19,9,18,613,yes,fit
+2025-SP-datasentinel-a-game-theoretic-detection-of-prompt-injection-,SP,2025,DataSentinel A Game-Theoretic Detection of Prompt Injection Attacks,19,6,17,156,yes,fit
+2025-SP-fun-tuning-characterizing-the-vulnerability-of-proprietary-l,SP,2025,Fun-tuning Characterizing the Vulnerability of Proprietary LLMs to Optimization-Based Prompt Inject,19,10,11,243,yes,fit
+2025-SP-fuzz-testing-meets-llm-based-agents-an-automated-and-efficie,SP,2025,Fuzz-Testing Meets LLM-Based Agents An Automated and Efficient Framework for Jailbreaking Text-to-I,19,10,13,578,yes,fit
+2025-SP-gptracker-a-large-scale-measurement-of-misused-gpts,SP,2025,GPTracker A Large-Scale Measurement of Misused GPTs,19,16,13,2882,yes,fit
+2025-SP-i-know-what-you-sync-covert-and-side-channel-attacks-on-file,SP,2025,I know What You Sync Covert and Side Channel Attacks on File Systems via syncfs,17,10,11,273,yes,fit
+2025-SP-make-a-feint-to-the-east-while-attacking-in-the-west-blindin,SP,2025,Make a Feint to the East While Attacking in the West Blinding LLM-Based Code Auditors with Flashboo,19,13,9,604,yes,fit
+2025-SP-on-the-in-security-of-llm-app-stores,SP,2025,On the (In)Security of LLM App Stores,19,10,13,217,yes,held-out
+2025-SP-peftguard-detecting-backdoor-attacks-against-parameter-effic,SP,2025,PEFTGuard Detecting Backdoor Attacks Against Parameter-Efficient Fine-Tuning,19,7,17,222,yes,fit
+2025-SP-preference-poisoning-attacks-on-reward-model-learning,SP,2025,Preference Poisoning Attacks on Reward Model Learning,19,27,1,476,yes,fit
+2025-SP-prevalence-overshadows-concerns-understanding-chinese-users-,SP,2025,Prevalence Overshadows Concerns Understanding Chinese Users' Privacy Awareness and Expectations Towa,19,9,6,190,yes,fit
+2025-SP-prompt-inversion-attack-against-collaborative-inference-of-l,SP,2025,Prompt Inversion Attack Against Collaborative Inference of Large Language Models,18,8,11,310,yes,held-out
+2025-SP-rankguess-password-guessing-using-adversarial-ranking,SP,2025,RankGuess Password Guessing Using Adversarial Ranking,19,13,16,701,yes,fit
+2025-SP-security-analysis-of-master-password-protected-password-mana,SP,2025,Security Analysis of Master-Password-Protected Password Management Protocols,19,8,3,259,yes,fit
+2025-SP-sok-decoding-the-enigma-of-encrypted-network-traffic-classif,SP,2025,SoK Decoding the Enigma of Encrypted Network Traffic Classifiers,19,2,7,155,yes,fit
+2025-SP-sok-watermarking-for-ai-generated-content,SP,2025,SoK Watermarking for AI-Generated Content,19,1,1,192,yes,fit
+2025-SP-sparta-practical-anonymity-with-long-term-resistance-to-traf,SP,2025,Sparta Practical Anonymity with Long-Term Resistance to Traffic Analysis,17,14,0,504,yes,fit
+2025-SP-sv-trusteval-c-evaluating-structure-and-semantic-reasoning-i,SP,2025,SV-TrustEval-C Evaluating Structure and Semantic Reasoning in Large Language Models for Source Code,19,13,6,523,yes,fit
+2025-SP-the-digital-cybersecurity-expert-how-far-have-we-come,SP,2025,The Digital Cybersecurity Expert How Far Have We Come,18,9,6,221,yes,fit
+2025-SP-trafficformer-an-efficient-pre-trained-model-for-traffic-dat,SP,2025,TrafficFormer An Efficient Pre-trained Model for Traffic Data,17,8,9,555,yes,fit
+2025-SP-typeforge-synthesizing-and-selecting-best-fit-composite-data,SP,2025,TypeForge Synthesizing and Selecting Best-Fit Composite Data Types for Stripped Binaries,18,11,11,255,yes,fit
+2025-SP-wirewatch-measuring-the-security-of-proprietary-network-encr,SP,2025,WireWatch Measuring the Security of Proprietary Network Encryption in the Global Android Ecosystem,19,5,5,159,yes,fit
+2026-SP-agentic-concolic-execution,SP,2026,Agentic Concolic Execution,19,9,9,574,yes,fit
+2026-SP-are-llm-enhanced-graph-neural-networks-robust-against-poison,SP,2026,Are LLM-Enhanced Graph Neural Networks Robust Against Poisoning Attacks,19,10,17,242,yes,fit
+2026-SP-attntrace-contextual-attribution-of-prompt-injection-and-kno,SP,2026,AttnTrace Contextual Attribution of Prompt Injection and Knowledge Corruption,19,9,11,584,yes,fit
+2026-SP-bachunter-detecting-broken-access-control-vulnerabilities-in,SP,2026,BACHunter Detecting Broken Access Control Vulnerabilities in Intelligent Connected Vehicles,19,12,8,275,yes,fit
+2026-SP-beyond-indistinguishability-measuring-extraction-risk-in-llm,SP,2026,Beyond Indistinguishability Measuring Extraction Risk in LLM APIs,19,20,6,554,yes,fit
+2026-SP-breaking-free-from-ivory-tower-evaluating-and-enhancing-real,SP,2026,Breaking Free from Ivory Tower Evaluating and Enhancing Real-world Chinese Underground Adversarial,19,6,15,310,yes,fit
+2026-SP-breaking-the-illusion-automated-reasoning-of-gdpr-consent-vi,SP,2026,Breaking the Illusion Automated Reasoning of GDPR Consent Violations,19,13,9,608,yes,fit
+2026-SP-cbue-conclusion-based-utility-evaluation-for-differentially-,SP,2026,CBUE Conclusion Based Utility Evaluation for Differentially Private Categorical Data,17,12,14,252,yes,fit
+2026-SP-cenrl-a-framework-for-performing-intelligent-censorship-meas,SP,2026,CenRL A Framework for Performing Intelligent Censorship Measurements,19,13,5,231,yes,fit
+2026-SP-circle-recovering-complex-data-structures-in-binaries-beyond,SP,2026,CiRCLE Recovering Complex Data Structures in Binaries Beyond Fragmentation,20,9,12,565,yes,held-out
+2026-SP-contextualizing-sink-knowledge-for-java-vulnerability-discov,SP,2026,Contextualizing Sink Knowledge for Java Vulnerability Discovery,20,6,17,221,yes,fit
+2026-SP-cottontail-large-language-model-driven-concolic-execution-fo,SP,2026,Cottontail Large Language Model-Driven Concolic Execution for Highly Structured Test Input Generati,19,16,7,381,yes,fit
+2026-SP-deepsurf-detecting-memory-safety-vulnerabilities-in-rust-thr,SP,2026,deepSURF Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses,20,5,9,179,yes,fit
+2026-SP-demystifying-the-in-security-of-oauth-based-account-linking-,SP,2026,Demystifying the (In)Security of Oauth-Based Account Linking in Connector Ecosystems,20,15,7,553,yes,fit
+2026-SP-detecting-privilege-escalation-in-polyglot-microservices-via,SP,2026,Detecting Privilege Escalation in Polyglot Microservices via Agentic Program Analysis,19,9,9,199,yes,fit
+2026-SP-enchtable-unified-safety-alignment-transfer-in-fine-tuned-la,SP,2026,ENCHTABLE Unified Safety Alignment Transfer in Fine-Tuned Large Language Models,19,4,12,538,yes,fit
+2026-SP-ensemble-conformal-predictor-encp-a-new-conformal-predictor-,SP,2026,Ensemble Conformal Predictor (EnCP) A New Conformal Predictor with Robustness Guarantees Against Da,19,16,15,229,yes,held-out
+2026-SP-fine-grained-kernel-auditing-using-augmented-syscall-referen,SP,2026,Fine-Grained Kernel Auditing Using Augmented Syscall Reference Behavior Analysis and Virtualized Sel,19,16,5,196,yes,held-out
+2026-SP-hijacking-large-audio-language-models-via-context-agnostic-a,SP,2026,Hijacking Large Audio-Language Models via Context-Agnostic and Imperceptible Auditory Prompt Injecti,19,19,7,215,yes,fit
+2026-SP-hollow-llm-attack-computationally-trivial-weights-in-zero-kn,SP,2026,Hollow-LLM Attack Computationally Trivial Weights in Zero-Knowledge Verification of LLM Inference,17,6,2,238,yes,fit
+2026-SP-incalmo-an-autonomous-llm-assisted-system-for-red-teaming-mu,SP,2026,Incalmo an Autonomous Llm-Assisted System for Red Teaming Multi-Host Networks,19,17,4,426,yes,fit
+2026-SP-investigating-the-impact-of-dark-patterns-on-llm-based-web-a,SP,2026,Investigating the Impact of Dark Patterns on LLM-Based Web Agents,20,16,8,238,yes,fit
+2026-SP-keytar-practical-keystroke-timing-attacks-and-input-reconstr,SP,2026,Keytar Practical Keystroke Timing Attacks and Input Reconstruction,20,6,4,308,yes,fit
+2026-SP-knocking-on-the-front-door-an-llm-guided-systematic-analysis,SP,2026,Knocking on the Front Door An LLM-Guided Systematic Analysis of DNS Query Processing Vulnerabilitie,20,13,9,297,yes,fit
+2026-SP-leakylinks-measuring-the-security-and-privacy-risks-of-url-s,SP,2026,LEAKYLINKS Measuring the Security and Privacy Risks of URL Scanning Services,20,4,6,559,yes,fit
+2026-SP-llm-unlearning-should-be-form-independent,SP,2026,LLM Unlearning Should Be Form-Independent,18,13,2,560,yes,fit
+2026-SP-llms-in-the-soc-an-empirical-study-of-human-ai-collaboration,SP,2026,LLMs in the SOC An Empirical Study of Human-AI Collaboration in Security Operations Centres,20,9,5,529,yes,fit
+2026-SP-llmthief-evaluating-configuration-leaking-risks-in-commercia,SP,2026,LLMThief Evaluating Configuration Leaking Risks in Commercial LLM App Stores,19,7,9,252,yes,fit
+2026-SP-metabreak-jailbreaking-online-llm-services-via-special-token,SP,2026,MetaBreak Jailbreaking Online LLM Services via Special Token Manipulation,20,10,17,597,yes,fit
+2026-SP-navigating-developers-quagmire-llm-enabled-privacy-complianc,SP,2026,Navigating Developers' Quagmire LLM-Enabled Privacy Compliance Analysis for SDK Integrations,20,6,6,430,yes,fit
+2026-SP-parasites-in-the-toolchain-a-large-scale-analysis-of-attacks,SP,2026,Parasites in the Toolchain A Large-Scale Analysis of Attacks on the MCP Ecosystem,18,5,9,252,yes,held-out
+2026-SP-pilot-command-line-interface-fuzzing-via-path-guided-iterati,SP,2026,"PILOT Command-Line Interface Fuzzing Via Path-Guided, Iterative Large Language Model Prompting",19,4,22,190,yes,fit
+2026-SP-portgpt-towards-automated-backporting-using-large-language-m,SP,2026,PortGPT Towards Automated Backporting Using Large Language Models,20,6,9,148,yes,fit
+2026-SP-promptcos-towards-content-only-system-prompt-copyright-audit,SP,2026,PromptCOS Towards Content-Only System Prompt Copyright Auditing for LLMs,19,6,6,551,yes,fit
+2026-SP-promptlocate-localizing-prompt-injection-attacks,SP,2026,PromptLocate Localizing Prompt Injection Attacks,19,5,17,507,yes,fit
+2026-SP-radkey-an-llm-guided-rf-backscatter-system-for-through-wall-,SP,2026,RadKey An LLM-Guided RF Backscatter System for Through-Wall Keystroke Inference,19,19,7,524,yes,fit
+2026-SP-recovering-and-rehosting-mobile-local-llm-conversations-and-,SP,2026,Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics,19,8,3,229,yes,fit
+2026-SP-site-isolation-is-dead-how-site-isolation-is-broken-in-agent,SP,2026,Site Isolation is Dead How Site Isolation is Broken in Agentic Browsers and Extensions,18,9,14,449,yes,fit
+2026-SP-sok-evaluating-jailbreak-guardrails-for-large-language-model,SP,2026,Sok Evaluating Jailbreak Guardrails for Large Language Models,20,8,6,148,yes,fit
+2026-SP-sok-robustness-in-large-language-models-against-jailbreak-at,SP,2026,SoK Robustness in Large Language Models against Jailbreak Attacks,20,5,14,534,yes,fit
+2026-SP-specauditor-generating-audit-specifications-for-llm-driven-b,SP,2026,SpecAuditor Generating Audit Specifications for LLM-Driven Bug Detection,18,11,9,339,yes,held-out
+2026-SP-specializing-language-models-for-textual-fuzzing-via-reinfor,SP,2026,Specializing Language Models for Textual Fuzzing via Reinforcement Learning,17,6,15,220,yes,fit
+2026-SP-stepstone-llm-based-gpu-kernel-driver-fuzzing-via-user-space,SP,2026,StepStone LLM-Based GPU Kernel Driver Fuzzing via User-Space Libraries,18,17,4,247,yes,fit
+2026-SP-tdxray-microarchitectural-side-channel-analysis-of-intel-tdx,SP,2026,TDXRay Microarchitectural Side-Channel Analysis of Intel TDX for Real-World Workloads,18,9,3,253,yes,fit
+2026-SP-the-person-behind-the-sound-demystifying-audio-private-attri,SP,2026,The Person Behind the Sound Demystifying Audio Private Attribute Profiling Via Multimodal Large Lan,20,4,19,297,yes,fit
+2026-SP-towards-automating-data-access-permissions-in-ai-agents,SP,2026,Towards Automating Data Access Permissions in AI Agents,19,9,6,163,yes,fit
+2026-SP-understanding-and-analyzing-privacy-risks-in-mobile-consent-,SP,2026,Understanding and Analyzing Privacy Risks in Mobile Consent-Management Platforms,19,10,1,2114,yes,fit
+2026-SP-web-application-vulnerability-repair-via-context-aware-fault,SP,2026,Web Application Vulnerability Repair Via Context-Aware Fault Localization and Directed Differential,20,2,20,190,yes,fit
+2026-SP-webcloak-characterizing-and-mitigating-threats-from-llm-driv,SP,2026,WebCloak Characterizing and Mitigating Threats From LLM-Driven Web Agents as Intelligent Scrapers,20,9,16,247,yes,fit
+2026-SP-when-ai-meets-the-web-prompt-injection-risks-in-third-party-,SP,2026,When AI Meets the Web Prompt Injection Risks in Third-Party AI Chatbot Plugins,20,6,4,265,yes,fit
+2023-USENIX-all-of-them-claim-to-be-the-best-multi-perspective-study-of-,USENIX,2023,All of them claim to be the best: Multi-perspective study of VPN users and VPN providers,18,4,6,212,yes,fit
+2023-USENIX-an-input-agnostic-hierarchical-deep-learning-framework-for-t,USENIX,2023,An Input-Agnostic Hierarchical Deep Learning Framework for Traffic Fingerprinting,19,15,13,11334,yes,held-out
+2023-USENIX-bleem-packet-sequence-oriented-fuzzing-for-protocol-implemen,USENIX,2023,Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations,19,11,9,176,yes,fit
+2023-USENIX-bypassing-tunnels-leaking-vpn-client-traffic-by-abusing-rout,USENIX,2023,Bypassing Tunnels: Leaking VPN Client Traffic by Abusing Routing Tables,19,8,2,257,yes,held-out
+2023-USENIX-codexleaks-privacy-leaks-from-code-generation-language-model,USENIX,2023,CodexLeaks: Privacy Leaks from Code Generation Language Models in GitHub Copilot,19,1,11,177,yes,fit
+2023-USENIX-generative-intrusion-detection-and-prevention-on-data-stream,USENIX,2023,Generative Intrusion Detection and Prevention on Data Stream,18,10,9,277,yes,fit
+2023-USENIX-horuseye-a-realtime-iot-malicious-traffic-detection-framewor,USENIX,2023,HorusEye: A Realtime IoT Malicious Traffic Detection Framework using Programmable Switches,19,8,12,200,yes,fit
+2023-USENIX-how-the-great-firewall-of-china-detects-and-blocks-fully-enc,USENIX,2023,How the Great Firewall of China Detects and Blocks Fully Encrypted Traffic,19,7,3,0,no,fit
+2023-USENIX-lost-at-c-a-user-study-on-the-security-implications-of-large,USENIX,2023,Lost at C: A User Study on the Security Implications of Large Language Model Code Assistants,19,12,9,131,yes,fit
+2023-USENIX-rosetta-enabling-robust-tls-encrypted-traffic-classification,USENIX,2023,Rosetta: Enabling Robust TLS Encrypted Traffic Classification in Diverse Network Environments with TCP-Aware T,19,9,9,162,yes,fit
+2023-USENIX-subverting-website-fingerprinting-defenses-with-robust-traff,USENIX,2023,Subverting Website Fingerprinting Defenses with Robust Traffic Representation,19,7,11,163,yes,fit
+2023-USENIX-timeless-timing-attacks-and-preload-defenses-in-tor-s-dns-ca,USENIX,2023,Timeless Timing Attacks and Preload Defenses in Tor s DNS Cache,19,13,2,275,yes,fit
+2023-USENIX-user-awareness-and-behaviors-concerning-encrypted-dns-settin,USENIX,2023,User Awareness and Behaviors Concerning Encrypted DNS Settings in Web Browsers,18,5,9,156,yes,fit
+2023-USENIX-we-really-need-to-talk-about-session-tickets-a-large-scale-a,USENIX,2023,We Really Need to Talk About Session Tickets: A Large-Scale Analysis of Cryptographic Dangers with TLS Session,19,9,3,623,yes,fit
+2023-USENIX-xnids-explaining-deep-learning-based-network-intrusion-detec,USENIX,2023,xNIDS: Explaining Deep Learning-based Network Intrusion Detection Systems for Active Intrusion Responses,19,7,12,219,yes,fit
+2024-USENIX-an-llm-assisted-easy-to-trigger-backdoor-attack-on-code-comp,USENIX,2024,An LLM-Assisted Easy-to-Trigger Backdoor Attack on Code Completion Models: Injecting Disguised Vulnerabilities,19,11,6,7303,yes,fit
+2024-USENIX-eatvul-chatgpt-based-evasion-attack-against-software-vulnera,USENIX,2024,EaTVul: ChatGPT-based Evasion Attack Against Software Vulnerability Detection,19,6,12,180,yes,fit
+2024-USENIX-eng25519-faster-tls-1-3-handshake-using-optimized-x25519-and,USENIX,2024,ENG25519: Faster TLS 1.3 handshake using optimized X25519 and Ed25519,19,3,7,1462,yes,fit
+2024-USENIX-exploring-chatgpt-s-capabilities-on-vulnerability-management,USENIX,2024,Exploring ChatGPT s Capabilities on Vulnerability Management,19,6,10,246,yes,fit
+2024-USENIX-fingerprinting-obfuscated-proxy-traffic-with-encapsulated-tl,USENIX,2024,Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes,19,7,5,232,yes,fit
+2024-USENIX-formalizing-and-benchmarking-prompt-injection-attacks-and-de,USENIX,2024,Formalizing and Benchmarking Prompt Injection Attacks and Defenses,18,6,15,141,yes,fit
+2024-USENIX-i-just-hated-it-and-i-want-my-money-back-data-driven-underst,USENIX,2024,I just hated it and I want my money back: Data-driven Understanding of Mobile VPN Service Switching Preference,18,1,6,198,yes,fit
+2024-USENIX-instruction-backdoor-attacks-against-customized-llms,USENIX,2024,Instruction Backdoor Attacks Against Customized LLMs,19,7,8,193,yes,fit
+2024-USENIX-knowphish-large-language-models-meet-multimodal-knowledge-gr,USENIX,2024,KnowPhish: Large Language Models Meet Multimodal Knowledge Graphs for Enhancing Reference-Based Phishing Detec,19,12,10,228,yes,fit
+2024-USENIX-malla-demystifying-real-world-large-language-model-integrate,USENIX,2024,Malla: Demystifying Real-world Large Language Model Integrated Malicious Services,19,3,3,162,yes,fit
+2024-USENIX-mudjacking-patching-backdoor-vulnerabilities-in-foundation-m,USENIX,2024,Mudjacking: Patching Backdoor Vulnerabilities in Foundation Models,19,9,18,157,yes,fit
+2024-USENIX-racing-for-tls-certificate-validation-a-hijacker-s-guide-to-,USENIX,2024,Racing for TLS Certificate Validation: A Hijacker s Guide to the Android TLS Galaxy,19,4,9,602,yes,fit
+2024-USENIX-stop-don-t-click-here-anymore-boosting-website-fingerprintin,USENIX,2024,"Stop, Don t Click Here Anymore: Boosting Website Fingerprinting By Considering Sets of Subpages",19,10,6,238,yes,held-out
+2025-USENIX-activation-approximations-can-incur-safety-vulnerabilities-i,USENIX,2025,Activation Approximations Can Incur Safety Vulnerabilities in Aligned LLMs: Comprehensive Analysis and Defense,21,11,5,5922,yes,fit
+2025-USENIX-appatch-automated-adaptive-prompting-large-language-models-f,USENIX,2025,APPATCH: Automated Adaptive Prompting Large Language Models for Real-World Software Vulnerability Patching,21,12,16,158,yes,fit
+2025-USENIX-are-captchas-still-bot-hard-generalized-visual-captcha-solvi,USENIX,2025,Are CAPTCHAs Still Bot-hard Generalized Visual CAPTCHA Solving with Agentic Vision Language Model,21,18,9,264,yes,fit
+2025-USENIX-as-advertised-understanding-the-impact-of-influencer-vpn-ads,USENIX,2025,As Advertised Understanding the Impact of Influencer VPN Ads,19,2,6,190,yes,fit
+2025-USENIX-certta-certified-robustness-made-practical-for-learning-base,USENIX,2025,CertTA: Certified Robustness Made Practical for Learning-Based Traffic Analysis,21,12,4,206,yes,fit
+2025-USENIX-cloak-honey-trap-proactive-defenses-against-llm-agents,USENIX,2025,"Cloak, Honey, Trap: Proactive Defenses Against LLM Agents",21,8,13,72,no,fit
+2025-USENIX-depth-gives-a-false-sense-of-privacy-llm-internal-states-inv,USENIX,2025,Depth Gives a False Sense of Privacy: LLM Internal States Inversion,21,20,8,237,yes,fit
+2025-USENIX-echollm-llm-augmented-acoustic-eavesdropping-attack-on-bone-,USENIX,2025,EchoLLM: LLM-Augmented Acoustic Eavesdropping Attack on Bone Conduction Headphones with mmWave Radar,21,17,18,221,yes,fit
+2025-USENIX-embedx-embedding-based-cross-trigger-backdoor-attack-against,USENIX,2025,EmbedX: Embedding-Based Cross-Trigger Backdoor Attack Against Large Language Models,18,7,17,196,yes,fit
+2025-USENIX-evaluating-privacy-policies-under-modern-privacy-laws-at-sca,USENIX,2025,Evaluating Privacy Policies under Modern Privacy Laws At Scale: An LLM-Based Automated Approach,21,5,12,248,yes,held-out
+2025-USENIX-exploiting-task-level-vulnerabilities-an-automatic-jailbreak,USENIX,2025,Exploiting Task-Level Vulnerabilities: An Automatic Jailbreak Attack and Defense Benchmarking for LLMs,21,11,6,212,yes,fit
+2025-USENIX-exploring-user-security-and-privacy-attitudes-and-concerns-t,USENIX,2025,Exploring User Security and Privacy Attitudes and Concerns Toward the Use of General-Purpose LLM Chatbots for,19,0,1,163,yes,fit
+2025-USENIX-exposing-and-circumventing-sni-based-quic-censorship-of-the-,USENIX,2025,Exposing and Circumventing SNI-based QUIC Censorship of the Great Firewall of China,21,10,11,139,yes,fit
+2025-USENIX-exposing-the-guardrails-reverse-engineering-and-jailbreaking,USENIX,2025,Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALLE Text-to-Image Pipelines,21,12,8,209,yes,fit
+2025-USENIX-found-in-translation-a-generative-language-modeling-approach,USENIX,2025,Found in Translation: A Generative Language Modeling Approach to Memory Access Pattern Attacks,20,9,2,237,yes,fit
+2025-USENIX-from-meme-to-threat-on-the-hateful-meme-understanding-and-in,USENIX,2025,From Meme to Threat: On the Hateful Meme Understanding and Induced Hateful Content Generation in Open-Source V,21,10,3,232,yes,fit
+2025-USENIX-game-of-arrows-on-the-in-security-of-weight-obfuscation-for-,USENIX,2025,Game of Arrows: On the (In-)Security of Weight Obfuscation for On-Device TEE-Shielded LLM Partition Algorithms,21,8,6,275,yes,fit
+2025-USENIX-gecos-replacing-experts-generalizable-and-comprehensible-ind,USENIX,2025,GeCos Replacing Experts: Generalizable and Comprehensible Industrial Intrusion Detection,21,12,6,193,yes,fit
+2025-USENIX-generated-data-with-fake-privacy-hidden-dangers-of-fine-tuni,USENIX,2025,Generated Data with Fake Privacy: Hidden Dangers of Fine-tuning Large Language Models on Generated Data,20,10,6,1616,yes,fit
+2025-USENIX-great-now-write-an-article-about-that-the-crescendo-multi-tu,USENIX,2025,"Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack",21,15,9,245,yes,fit
+2025-USENIX-hatebench-benchmarking-hate-speech-detectors-on-llm-generate,USENIX,2025,HateBench: Benchmarking Hate Speech Detectors on LLM-Generated Content and Hate Campaigns,21,11,12,241,yes,fit
+2025-USENIX-jbshield-defending-large-language-models-from-jailbreak-atta,USENIX,2025,JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipu,21,5,12,261,yes,held-out
+2025-USENIX-llmmap-fingerprinting-for-large-language-models,USENIX,2025,LLMmap: Fingerprinting for Large Language Models,21,8,2,135,yes,fit
+2025-USENIX-llmxcpg-context-aware-vulnerability-detection-through-code-p,USENIX,2025,LLMxCPG: Context-Aware Vulnerability Detection Through Code Property Graph-Guided Large Language Models,20,8,13,185,yes,fit
+2025-USENIX-logs-in-patches-out-automated-vulnerability-repair-via-tree-,USENIX,2025,"Logs In, Patches Out: Automated Vulnerability Repair via Tree-of-Thought LLM Analysis",20,6,5,194,yes,fit
+2025-USENIX-make-agent-defeat-agent-automatic-detection-of-taint-style-v,USENIX,2025,Make Agent Defeat Agent: Automatic Detection of Taint-Style Vulnerabilities in LLM-based Agents,21,10,5,195,yes,held-out
+2025-USENIX-malicious-llm-based-conversational-ai-makes-users-reveal-per,USENIX,2025,Malicious LLM-Based Conversational AI Makes Users Reveal Personal Information,21,6,0,205,yes,fit
+2025-USENIX-mcsee-evaluating-advanced-rowhammer-attacks-and-defenses-via,USENIX,2025,McSee: Evaluating Advanced Rowhammer Attacks and Defenses via Automated DRAM Traffic Analysis,20,13,6,237,yes,fit
+2025-USENIX-membership-inference-attacks-against-vision-language-models,USENIX,2025,Membership Inference Attacks Against Vision-Language Models,21,23,2,194,yes,fit
+2025-USENIX-mirage-in-the-eyes-hallucination-attack-on-multi-modal-large,USENIX,2025,Mirage in the Eyes: Hallucination Attack on Multi-modal Large Language Models with Only Attention Sink,21,10,6,168,yes,fit
+2025-USENIX-onions-got-puzzled-on-the-challenges-of-mitigating-denial-of,USENIX,2025,Onions Got Puzzled: On the Challenges of Mitigating Denial-of-Service Problems in Tor Onion Services,20,11,1,191,yes,fit
+2025-USENIX-orthrus-achieving-high-quality-of-attribution-in-provenance-,USENIX,2025,ORTHRUS: Achieving High Quality of Attribution in Provenance-based Intrusion Detection Systems,21,11,16,231,yes,fit
+2025-USENIX-papillon-efficient-and-stealthy-fuzz-testing-powered-jailbre,USENIX,2025,PAPILLON: Efficient and Stealthy Fuzz Testing-Powered Jailbreaks for LLMs,21,2,15,256,yes,fit
+2025-USENIX-poisonedrag-knowledge-corruption-attacks-to-retrieval-augmen,USENIX,2025,PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models,19,5,12,248,yes,fit
+2025-USENIX-privacyxray-detecting-privacy-breaches-in-llms-through-seman,USENIX,2025,PrivacyXray: Detecting Privacy Breaches in LLMs through Semantic Consistency and Probability Certainty,21,15,14,214,yes,held-out
+2025-USENIX-selfdefend-llms-can-defend-themselves-against-jailbreaking-i,USENIX,2025,SelfDefend: LLMs Can Defend Themselves against Jailbreaking in a Practical Manner,21,9,11,17441,yes,held-out
+2025-USENIX-soft-selective-data-obfuscation-for-protecting-llm-fine-tuni,USENIX,2025,SOFT: Selective Data Obfuscation for Protecting LLM Fine-tuning against Membership Inference Attacks,21,11,9,149,yes,fit
+2025-USENIX-sometimes-simpler-is-better-a-comprehensive-analysis-of-stat,USENIX,2025,Sometimes Simpler is Better: A Comprehensive Analysis of State-of-the-Art Provenance-Based Intrusion Detection,21,13,11,1,no,fit
+2025-USENIX-stek-sharing-is-not-caring-bypassing-tls-authentication-in-w,USENIX,2025,STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets,19,4,1,210,yes,fit
+2025-USENIX-struq-defending-against-prompt-injection-with-structured-que,USENIX,2025,StruQ: Defending Against Prompt Injection with Structured Queries,19,3,11,218,yes,fit
+2025-USENIX-suda-an-efficient-and-secure-unbalanced-data-alignment-frame,USENIX,2025,Suda: An Efficient and Secure Unbalanced Data Alignment Framework for Vertical Privacy-Preserving Machine Lear,21,8,6,443,yes,fit
+2025-USENIX-torchlight-shedding-light-on-real-world-attacks-on-cloudless,USENIX,2025,TORCHLIGHT: Shedding LIGHT on Real-World Attacks on Cloudless IoT Devices Concealed within the Tor Network,21,8,9,179,yes,fit
+2025-USENIX-towards-internet-based-state-learning-of-tls-state-machines,USENIX,2025,Towards Internet-Based State Learning of TLS State Machines,21,6,11,0,no,fit
+2025-USENIX-towards-label-only-membership-inference-attack-against-pre-t,USENIX,2025,Towards Label-Only Membership Inference Attack against Pre-trained Large Language Models,21,8,19,284,yes,fit
+2025-USENIX-twinbreak-jailbreaking-llm-security-alignments-based-on-twin,USENIX,2025,TwinBreak: Jailbreaking LLM Security Alignments based on Twin Prompts,21,10,5,204,yes,fit
+2025-USENIX-unsafe-llm-based-search-quantitative-analysis-and-mitigation,USENIX,2025,Unsafe LLM-Based Search: Quantitative Analysis and Mitigation of Safety Risks in AI Web Search,21,7,2,226,yes,fit
+2025-USENIX-when-llms-go-online-the-emerging-threat-of-web-enabled-llms,USENIX,2025,When LLMs Go Online: The Emerging Threat of Web-Enabled LLMs,21,13,11,215,yes,fit
+2025-USENIX-whispering-under-the-eaves-protecting-user-privacy-against-c,USENIX,2025,Whispering Under the Eaves: Protecting User Privacy Against Commercial and LLM-powered Automatic Speech Recogn,21,10,17,247,yes,fit
+2026-USENIX-assessing-llm-response-quality-in-the-context-of-technology-,USENIX,2026,Assessing LLM Response Quality in the Context of Technology-Facilitated Abuse,21,7,0,225,yes,held-out
+2026-USENIX-attriguard-defeating-indirect-prompt-injection-in-llm-agents,USENIX,2026,AttriGuard: Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations,21,3,10,184,yes,fit
+2026-USENIX-autonomy-comes-with-costs-detecting-denial-of-service-vulner,USENIX,2026,Autonomy Comes with Costs: Detecting Denial-of-Service Vulnerabilities Caused by Resource Abusing in LLM-based,21,5,6,181,yes,fit
+2026-USENIX-breaking-the-boundaries-analyzing-quic-frame-packet-interact,USENIX,2026,Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker,19,6,9,149,yes,fit
+2026-USENIX-cognition-from-evaluation-to-defense-against-multimodal-llm-,USENIX,2026,COGNITION: From Evaluation to Defense against Multimodal LLM CAPTCHA Solvers,20,6,9,223,yes,fit
+2026-USENIX-context-contamination-in-llm-analysis-of-network-security-lo,USENIX,2026,Context Contamination in LLM Analysis of Network Security Logs: Poison with Passive Prompt Injection and Mitig,21,2,10,225,yes,held-out
+2026-USENIX-cordyceps-covert-control-attacks-on-llms-via-data-poisoning,USENIX,2026,Cordyceps: Covert Control Attacks on LLMs via Data Poisoning,21,11,9,174,yes,fit
+2026-USENIX-defending-jailbreak-attacks-on-large-language-models-via-man,USENIX,2026,Defending Jailbreak Attacks on Large Language Models via Manifold Trajectory Kinetics,21,7,12,260,yes,fit
+2026-USENIX-do-not-mention-this-to-the-user-detecting-and-understanding-,USENIX,2026,Do Not Mention This to the User: Detecting and Understanding Malicious Agent Skills in the Wild,21,5,10,0,no,fit
+2026-USENIX-dualsentinel-a-lightweight-framework-for-detecting-targeted-,USENIX,2026,DualSentinel: A Lightweight Framework for Detecting Targeted Attacks in Black-box LLM via Dual Entropy Lull Pa,21,8,9,241,yes,fit
+2026-USENIX-fragfuse-bypassing-access-control-of-large-language-model-ag,USENIX,2026,FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fus,21,3,17,259,yes,fit
+2026-USENIX-from-length-to-content-token-length-side-channel-attacks-on-,USENIX,2026,From Length to Content: Token-Length Side-Channel Attacks on LLM API Merged Outputs,21,10,6,57,no,fit
+2026-USENIX-from-texts-to-rules-generating-sigma-rules-with-large-langua,USENIX,2026,From Texts to Rules: Generating Sigma Rules with Large Language Models from Cyber Threat Reports,21,6,8,235,yes,fit
+2026-USENIX-gatebreaker-gate-guided-attacks-on-mixture-of-expert-llms,USENIX,2026,GateBreaker: Gate-Guided Attacks on Mixture-of-Expert LLMs,20,4,17,268,yes,fit
+2026-USENIX-generating-precise-format-specification-for-network-protocol,USENIX,2026,Generating Precise Format Specification for Network Protocols Through Adversarial LLM Interactions,21,13,4,212,yes,fit
+2026-USENIX-goodvibe-security-by-vibe-for-llm-based-code-generation,USENIX,2026,GoodVibe: Security-by-Vibe for LLM-Based Code Generation,19,4,19,239,yes,fit
+2026-USENIX-jailbreaking-the-amd-secure-processor-enabling-live-analysis,USENIX,2026,Jailbreaking the AMD Secure Processor: Enabling Live Analysis of SEV-SNP s Undocumented Security Boundaries,20,10,1,173,yes,fit
+2026-USENIX-kintsugi-empowering-llms-to-mitigate-web-vulnerabilities-via,USENIX,2026,Kintsugi: Empowering LLMs to Mitigate Web Vulnerabilities via Runtime Policy Injection,21,9,6,287,yes,fit
+2026-USENIX-mate-policy-aware-security-auditing-for-mobile-agents-via-sy,USENIX,2026,MATE: Policy-Aware Security Auditing for Mobile Agents via Synthesis-Driven Trajectory Learning,21,8,7,220,yes,held-out
+2026-USENIX-measuring-real-world-prompt-injection-attacks-in-llm-based-r,USENIX,2026,Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening,20,14,4,190,yes,fit
+2026-USENIX-membership-inference-attacks-on-tokenizers-of-large-language,USENIX,2026,Membership Inference Attacks on Tokenizers of Large Language Models,21,15,10,188,yes,fit
+2026-USENIX-meps-privacy-preserving-edge-cloud-video-foundation-model-in,USENIX,2026,MEPS: Privacy-preserving Edge-cloud Video Foundation Model Inference with Privacy Protectability,21,13,0,314,yes,fit
+2026-USENIX-motion-in-the-clear-reconstructing-vr-user-behavior-from-net,USENIX,2026,Motion in the Clear: Reconstructing VR User Behavior from Network Traffic,20,5,6,181,yes,fit
+2026-USENIX-muzzle-adaptive-agentic-red-teaming-of-web-agents-against-in,USENIX,2026,MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection Attacks,21,3,8,241,yes,fit
+2026-USENIX-noir-privacy-preserving-generation-of-code-with-open-source-,USENIX,2026,NOIR: Privacy-Preserving Generation of Code with Open-Source LLMs,21,16,3,212,yes,fit
+2026-USENIX-on-evaluating-the-robustness-of-large-vision-language-models,USENIX,2026,On Evaluating the Robustness of Large Vision-Language Models via Untargeted Modality Alignment Breaking Advers,21,9,6,209,yes,fit
+2026-USENIX-one-bad-token-spoils-the-barrel-assessment-detection-and-rem,USENIX,2026,"One Bad Token Spoils the Barrel: Assessment, Detection, and Remediation of Glitch Tokens in Large Language Mod",21,17,14,213,yes,fit
+2026-USENIX-opossum-attack-application-layer-desynchronization-using-opp,USENIX,2026,Opossum Attack: Application Layer Desynchronization using Opportunistic TLS,19,8,5,449,yes,fit
+2026-USENIX-overcoming-the-retrieval-barrier-indirect-prompt-injection-i,USENIX,2026,Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild for LLM Systems,21,11,3,246,yes,fit
+2026-USENIX-quantifying-large-language-model-attacks-through-the-lens-of,USENIX,2026,Quantifying Large Language Model Attacks Through the Lens of Model Cognition,21,9,6,0,no,fit
+2026-USENIX-smash-scalable-maliciously-secure-hybrid-multi-party-computa,USENIX,2026,SMASH: Scalable Maliciously Secure Hybrid Multi-party Computation Framework for Privacy-Preserving Large Langu,21,13,8,186,yes,held-out
+2026-USENIX-sok-attack-and-defense-landscape-of-agentic-ai-systems,USENIX,2026,SoK: Attack and Defense Landscape of Agentic AI Systems,21,4,1,121,yes,fit
+2026-USENIX-sok-philter-uncovering-security-and-functional-gaps-in-ai-ba,USENIX,2026,SoK: PHILTER: Uncovering Security and Functional Gaps in AI-based Phishing Website Detection Literature via an,21,1,13,233,yes,fit
+2026-USENIX-the-attacker-moves-second-stronger-adaptive-attacks-bypass-d,USENIX,2026,The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injecti,21,2,7,0,no,fit
+2026-USENIX-towards-practical-few-shot-multi-tab-website-fingerprinting,USENIX,2026,Towards Practical Few-shot Multi-tab Website Fingerprinting,21,11,10,238,yes,fit
+2026-USENIX-tracegram-framing-trace-level-traffic-analysis-with-temporal,USENIX,2026,Tracegram: Framing Trace-Level Traffic Analysis with Temporally-Aware Multiple Instance Learning,21,4,7,183,yes,fit
+2026-USENIX-what-the-eyes-see-the-llms-miss-exploiting-human-perception-,USENIX,2026,"What the Eyes See, the LLMs Miss: Exploiting Human Perception for Adversarial Text Attacks",21,7,6,223,yes,fit
+2026-USENIX-what-users-ask-policies-miss-unveiling-the-gap-between-commu,USENIX,2026,"What Users Ask, Policies Miss: Unveiling the Gap Between Community-Expressed Privacy Concerns and LLM Provider",21,4,4,207,yes,fit
+2026-USENIX-when-memory-becomes-a-vulnerability-towards-multi-turn-jailb,USENIX,2026,When Memory Becomes a Vulnerability: Towards Multi-turn Jailbreak Attacks against Text-to-Image Generation Sys,21,9,10,369,yes,fit
+2026-USENIX-window-based-membership-inference-attacks-against-fine-tuned,USENIX,2026,Window-based Membership Inference Attacks Against Fine-tuned Large Language Models,21,6,13,160,yes,fit

@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: vpn-tunnel-leak
+venue: USENIX
+expected_outcome: |
+  Source paper (hidden from the tester): Bypassing Tunnels: Leaking VPN Client Traffic by Abusing
+  Routing Tables, USENIX Security 2023. A submission-ready USENIX-style abstract and introduction
+  using only the supplied facts: the attacker and its capability are stated, the root cause (routing
+  exceptions) is named, the two attacks are distinguished, and the vulnerability counts appear with
+  their denominators and a disclosure statement.
+context:
+  scaffold_script: place-files.sh

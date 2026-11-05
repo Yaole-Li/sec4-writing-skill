@@ -1,0 +1,129 @@
+{
+ "n_fit": 241,
+ "venues": {
+  "NDSS": {
+   "n": 51,
+   "pages": {
+    "p50": 18,
+    "min": 14,
+    "max": 20
+   },
+   "abstract_words": {
+    "p50": 227,
+    "usable": 51,
+    "unusable": 0
+   },
+   "figures_p50": 11,
+   "tables_p50": 9,
+   "floats_per_page_p50": 1.17,
+   "section_presence": {
+    "introduction": 51,
+    "experiments": 40,
+    "related work": 40,
+    "method": 33,
+    "conclusion": 28,
+    "discussion": 18,
+    "problem setup": 10,
+    "threat model": 10,
+    "ethics": 5
+   },
+   "ethics_section": 5,
+   "ethics_mention": 32,
+   "open_science": 2,
+   "artifact_badge_in_text": 0,
+   "threat_model_section": 10,
+   "threat_model_any": 37,
+   "related_work_section": 40,
+   "ablation_mention": 25,
+   "limitations_mention": 43,
+   "title_pattern": {
+    "plain": 16,
+    "colon": 35
+   },
+   "sok": 0
+  },
+  "SP": {
+   "n": 86,
+   "pages": {
+    "p50": 19,
+    "min": 15,
+    "max": 20
+   },
+   "abstract_words": {
+    "p50": 275,
+    "usable": 86,
+    "unusable": 0
+   },
+   "figures_p50": 9,
+   "tables_p50": 8,
+   "floats_per_page_p50": 1.05,
+   "section_presence": {
+    "introduction": 86,
+    "related work": 74,
+    "experiments": 67,
+    "method": 52,
+    "conclusion": 48,
+    "discussion": 43,
+    "problem setup": 19,
+    "threat model": 15,
+    "ethics": 4,
+    "open science": 3
+   },
+   "ethics_section": 4,
+   "ethics_mention": 57,
+   "open_science": 6,
+   "artifact_badge_in_text": 0,
+   "threat_model_section": 15,
+   "threat_model_any": 47,
+   "related_work_section": 74,
+   "ablation_mention": 39,
+   "limitations_mention": 75,
+   "title_pattern": {
+    "plain": 86
+   },
+   "sok": 5
+  },
+  "USENIX": {
+   "n": 104,
+   "pages": {
+    "p50": 21,
+    "min": 18,
+    "max": 21
+   },
+   "abstract_words": {
+    "p50": 212,
+    "usable": 96,
+    "unusable": 8
+   },
+   "figures_p50": 8,
+   "tables_p50": 8,
+   "floats_per_page_p50": 0.81,
+   "section_presence": {
+    "introduction": 93,
+    "conclusion": 75,
+    "related work": 71,
+    "experiments": 64,
+    "method": 53,
+    "discussion": 42,
+    "threat model": 22,
+    "problem setup": 19,
+    "ethics": 12,
+    "open science": 9
+   },
+   "ethics_section": 12,
+   "ethics_mention": 89,
+   "open_science": 78,
+   "artifact_badge_in_text": 0,
+   "threat_model_section": 22,
+   "threat_model_any": 73,
+   "related_work_section": 71,
+   "ablation_mention": 46,
+   "limitations_mention": 96,
+   "title_pattern": {
+    "colon": 79,
+    "plain": 25
+   },
+   "sok": 2
+  }
+ }
+}

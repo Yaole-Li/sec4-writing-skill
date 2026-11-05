@@ -1,0 +1,11 @@
+schema_version: "1.0"
+name: mcp-ecosystem-census
+venue: SP
+expected_outcome: |
+  Source paper (hidden from the tester): Parasites in the Toolchain: A Large-Scale Analysis of Attacks
+  on the MCP Ecosystem, IEEE S&P 2026. A submission-ready S&P-style abstract and introduction using
+  only the supplied facts: the new surface is named, the three-phase attack is distinguished from
+  prompt injection and tool poisoning, the census scale is reported with its denominator, and the
+  paper states that no direct victim interaction is required.
+context:
+  scaffold_script: place-files.sh

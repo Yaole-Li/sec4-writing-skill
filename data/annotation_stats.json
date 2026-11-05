@@ -1,0 +1,280 @@
+{
+ "n_papers": 65,
+ "n_records_total": 120,
+ "n_sequence_records_used": 65,
+ "paper_type": [
+  [
+   "A4",
+   17
+  ],
+  [
+   "A1",
+   16
+  ],
+  [
+   "A3",
+   12
+  ],
+  [
+   "A2",
+   11
+  ],
+  [
+   "A5",
+   5
+  ],
+  [
+   "A7",
+   2
+  ],
+  [
+   "A6",
+   2
+  ]
+ ],
+ "motivation": [
+  [
+   "capability-gap",
+   18
+  ],
+  [
+   "new-surface",
+   12
+  ],
+  [
+   "assumption-gap",
+   9
+  ],
+  [
+   "insight",
+   9
+  ],
+  [
+   "failure",
+   7
+  ],
+  [
+   "scale-gap",
+   5
+  ],
+  [
+   "cost",
+   5
+  ]
+ ],
+ "threat_model_location": [
+  [
+   "implicit",
+   24
+  ],
+  [
+   "own-section",
+   17
+  ],
+  [
+   "intro-paragraph",
+   15
+  ],
+  [
+   "absent",
+   7
+  ],
+  [
+   "subsection",
+   2
+  ]
+ ],
+ "ethics_location": [
+  [
+   "absent",
+   57
+  ],
+  [
+   "intro-paragraph",
+   6
+  ],
+  [
+   "own-section",
+   2
+  ]
+ ],
+ "openscience_location": [
+  [
+   "absent",
+   42
+  ],
+  [
+   "intro-sentence",
+   22
+  ],
+  [
+   "own-section",
+   1
+  ]
+ ],
+ "by_venue": {},
+ "intro_function_presence": {
+  "L": 41,
+  "C": 17,
+  "G": 24,
+  "A": 39,
+  "I": 6,
+  "M": 31,
+  "S": 21,
+  "R": 19,
+  "P": 4,
+  "K": 20,
+  "X": 12,
+  "E": 11,
+  "O": 20
+ },
+ "intro_function_first_position_median": {
+  "L": 0.0,
+  "C": 0.17,
+  "G": 0.0,
+  "A": 0.2,
+  "I": 0.96,
+  "M": 0.6,
+  "S": 0.29,
+  "R": 0.5,
+  "P": 0.04,
+  "K": 0.72,
+  "X": 0.25,
+  "E": 0.5,
+  "O": 0.59
+ },
+ "intro_paragraphs": {
+  "median": 6,
+  "by_type": {
+   "A4": 7,
+   "A2": 7,
+   "A1": 6.0,
+   "A5": 7,
+   "A3": 7.0,
+   "A7": 9.5,
+   "A6": 7.5
+  }
+ },
+ "abstract_first_sentence": [
+  [
+   "L",
+   29
+  ],
+  [
+   "G",
+   18
+  ],
+  [
+   "A",
+   6
+  ],
+  [
+   "S",
+   5
+  ],
+  [
+   "R",
+   3
+  ],
+  [
+   "M",
+   2
+  ],
+  [
+   "E",
+   1
+  ],
+  [
+   "I",
+   1
+  ]
+ ],
+ "abstract_last_sentence": [
+  [
+   "R",
+   15
+  ],
+  [
+   "G",
+   8
+  ],
+  [
+   "L",
+   8
+  ],
+  [
+   "X",
+   7
+  ],
+  [
+   "S",
+   7
+  ],
+  [
+   "M",
+   6
+  ],
+  [
+   "K",
+   5
+  ],
+  [
+   "A",
+   4
+  ],
+  [
+   "E",
+   4
+  ],
+  [
+   "I",
+   1
+  ]
+ ],
+ "abstract_arcs_top": [
+  [
+   "L→G→A→M→R→X→E",
+   2
+  ],
+  [
+   "L→G→M→I→R→X",
+   2
+  ],
+  [
+   "L→G→X→I→X→R→S→X→R",
+   1
+  ],
+  [
+   "G→X→G→I→M→X→R→S→R",
+   1
+  ],
+  [
+   "L→M→X→G→X→I→S→R",
+   1
+  ],
+  [
+   "E→A→G→A→G→A→X→R",
+   1
+  ],
+  [
+   "G→I→M→X→G",
+   1
+  ],
+  [
+   "L→M→A→I→X→R→A→M→A→X→A→X→G→X→G→A→X",
+   1
+  ],
+  [
+   "L→X→G→I→M→X→R→M→X→G→M→G→X→G→X→G→X→R",
+   1
+  ],
+  [
+   "G→I→M→S",
+   1
+  ]
+ ],
+ "contrib_list_in_intro": 20,
+ "has_problem_section": 18,
+ "has_related_work": 53,
+ "has_theory_section": 0
+}

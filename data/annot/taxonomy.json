@@ -1,0 +1,221 @@
+{
+ "schema": "sec4-corpus-annotation/v1",
+ "frozen_at": "2026-11-05",
+ "paper_types": [
+  {
+   "code": "A1",
+   "name": "Attack",
+   "definition": "A new attack, exploit, leak or inference technique is the main deliverable.",
+   "order": 1
+  },
+  {
+   "code": "A2",
+   "name": "Defense",
+   "definition": "A new detection, prevention, mitigation, obfuscation or privacy-protection mechanism is the main deliverable.",
+   "order": 2
+  },
+  {
+   "code": "A3",
+   "name": "Measurement",
+   "definition": "A large-scale empirical characterisation of a threat, an ecosystem or a deployed defense landscape.",
+   "order": 3
+  },
+  {
+   "code": "A4",
+   "name": "System",
+   "definition": "An implemented system or platform whose engineering properties (overhead, deployment, usability) carry the contribution.",
+   "order": 4
+  },
+  {
+   "code": "A5",
+   "name": "Analysis or construction",
+   "definition": "A formal result, cryptographic construction, proof, bound or rigorous analysis carries the contribution.",
+   "order": 5
+  },
+  {
+   "code": "A6",
+   "name": "SoK",
+   "definition": "A systematisation of knowledge: an existing body of work is organised, re-evaluated or unified, and the framework or re-evaluation is the deliverable.",
+   "order": 6
+  },
+  {
+   "code": "A7",
+   "name": "Dataset or benchmark",
+   "definition": "A dataset, benchmark, testbed or evaluation resource is the main deliverable.",
+   "order": 7
+  }
+ ],
+ "type_order_rule": "first yes wins: A6 if the paper systematises or re-evaluates existing work; else A7 if a resource is released as the main artefact; else A1 if the deliverable is an attacker capability; else A3 if the deliverable is a characterisation; else A4 if an implemented artefact carries the claim; else A5 if a formal result carries it; else A2",
+ "motivations": [
+  {
+   "code": "new-surface",
+   "definition": "A newly deployed technology or protocol creates a threat surface that has not been examined yet (LLMs, QUIC, eBPF, agents, smart contracts)."
+  },
+  {
+   "code": "failure",
+   "definition": "An existing defense or analysis breaks under a specific, reproducible condition (adaptive attacker, noise, distribution shift, evasion)."
+  },
+  {
+   "code": "assumption-gap",
+   "definition": "Prior work rests on an assumption that no longer holds, for example about attacker capability, threat model, or deployment."
+  },
+  {
+   "code": "cost",
+   "definition": "Existing defenses work but cost too much: latency, bandwidth, usability, deployment effort."
+  },
+  {
+   "code": "capability-gap",
+   "definition": "No existing method can answer the question at all (a new task, a new granularity, a new platform)."
+  },
+  {
+   "code": "scale-gap",
+   "definition": "The method works at lab scale or on synthetic data but not on real deployments or real populations."
+  },
+  {
+   "code": "insight",
+   "definition": "One structural observation about the problem makes a complex pipeline unnecessary."
+  }
+ ],
+ "intro_codes": {
+  "L": "landscape/context: the deployed reality and who is exposed",
+  "C": "credit: what prior work does, named, and what it assumes",
+  "G": "gap: what fails, under which condition, and why",
+  "A": "attacker model: goal, knowledge, capability, and what is out of scope",
+  "I": "insight: the observation the design follows from",
+  "M": "method: the design, components in causal order",
+  "S": "security or evaluation property: what is guaranteed or measured",
+  "R": "results: headline numbers with dataset, metric and baseline",
+  "P": "positioning: the closest work named with one checkable difference",
+  "K": "contributions: the enumerated list",
+  "X": "stance/scope: impact, limits, roadmap",
+  "E": "ethics and disclosure: IRB, responsible disclosure, data handling, dual use",
+  "O": "open science: artefact availability, code and data release"
+ },
+ "functions_seen_in_abstract": [
+  "L",
+  "G",
+  "A",
+  "I",
+  "M",
+  "S",
+  "R",
+  "K",
+  "X",
+  "E"
+ ],
+ "threat_model_locations": [
+  "own-section",
+  "problem-subsection",
+  "intro-paragraph",
+  "implicit",
+  "absent"
+ ],
+ "ethics_locations": [
+  "own-section",
+  "subsection",
+  "appendix",
+  "intro-paragraph",
+  "absent"
+ ],
+ "openscience_locations": [
+  "own-section",
+  "subsection",
+  "appendix",
+  "intro-sentence",
+  "intro-paragraph",
+  "absent"
+ ],
+ "move_tags": {
+  "intro": [
+   "intro.landscape",
+   "intro.credit",
+   "intro.gap.failure",
+   "intro.gap.assumption",
+   "intro.gap.cost",
+   "intro.gap.scale",
+   "intro.gap.new-surface",
+   "intro.attacker",
+   "intro.insight",
+   "intro.method",
+   "intro.security",
+   "intro.result",
+   "intro.positioning",
+   "intro.contribution",
+   "intro.stance",
+   "intro.ethics",
+   "intro.openscience"
+  ],
+  "abstract": [
+   "abstract.open.threat",
+   "abstract.open.capability",
+   "abstract.open.gap",
+   "abstract.idea",
+   "abstract.method",
+   "abstract.security",
+   "abstract.result",
+   "abstract.release",
+   "abstract.scope"
+  ],
+  "related": [
+   "relwork.group-by-assumption",
+   "relwork.closest",
+   "relwork.credit-then-differ"
+  ],
+  "method": [
+   "method.opener",
+   "method.need",
+   "method.mechanism",
+   "method.property",
+   "method.complexity"
+  ],
+  "eval": [
+   "eval.setup",
+   "eval.claim-first",
+   "eval.ablation",
+   "eval.adaptive-attack",
+   "eval.overhead",
+   "eval.usability",
+   "eval.limitation"
+  ],
+  "threat": [
+   "threat.goal",
+   "threat.capability",
+   "threat.knowledge",
+   "threat.assumption",
+   "threat.out-of-scope"
+  ],
+  "ethics": [
+   "ethics.irb",
+   "ethics.disclosure",
+   "ethics.data-handling",
+   "ethics.dual-use"
+  ],
+  "openscience": [
+   "openscience.artefact-available",
+   "openscience.data-release",
+   "openscience.reproducibility"
+  ],
+  "conclusion": [
+   "concl.summary",
+   "concl.scope",
+   "concl.outlook"
+  ],
+  "pattern": [
+   "pattern.colon-expansion",
+   "pattern.contrast-rather-than",
+   "pattern.trailing-participle",
+   "pattern.enumerated-clause"
+  ]
+ },
+ "reviewer_checks": [
+  "threat model states goal, knowledge, capability, observables and out-of-scope attacks",
+  "an adaptive or knowledgeable attacker is evaluated, not only a static baseline",
+  "both error directions reported (attack success and false positives) at a stated operating point",
+  "baselines are re-run on the same data with the same budget, and reimplementations are disclosed",
+  "overhead (latency, memory, bandwidth) or usability cost is reported next to effectiveness",
+  "measurement and human-subject work states IRB approval, data minimisation and responsible disclosure",
+  "artefact availability (code, data, evaluation scripts) is stated, with what is withheld and why",
+  "claims of robustness name the attack family and the condition they survive",
+  "for LLM work, model versions, prompts and decoding settings are disclosed"
+ ]
+}

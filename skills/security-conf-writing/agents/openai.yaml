@@ -1,0 +1,6 @@
+interface:
+  display_name: "Security Conference Writing"
+  short_description: "Draft S&P / USENIX Security / NDSS / CCS abstracts, introductions, threat models, designs, evaluations, ethics and artefact statements"
+  default_prompt: "Use $security-conf-writing to write the Title, Abstract, Introduction, Threat Model, Design, Evaluation, Ethics and Open Science sections of my security paper from the intake form JSON."
+policy:
+  allow_implicit_invocation: true
