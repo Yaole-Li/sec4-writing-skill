@@ -1,0 +1,115 @@
+{
+ "protocol": "mean of D1-D9, pooled over judges and cases; headline = paired difference",
+ "synthetic": true,
+ "cases": [
+  "mcp-ecosystem-census",
+  "vpn-tunnel-leak"
+ ],
+ "judges_per_case": {
+  "mcp-ecosystem-census": 3,
+  "vpn-tunnel-leak": 3
+ },
+ "configs": {
+  "alpha-with": {
+   "overall": 3.48,
+   "n": 6,
+   "ci95": [
+    3.37,
+    3.59
+   ],
+   "per_case": {
+    "mcp-ecosystem-census": 3.48,
+    "vpn-tunnel-leak": 3.48
+   },
+   "per_dim": {
+    "D1": 3,
+    "D2": 3.5,
+    "D3": 3.83,
+    "D4": 4.17,
+    "D5": 3.83,
+    "D6": 2.83,
+    "D7": 1.83,
+    "D8": 4.5,
+    "D9": 3.83
+   }
+  },
+  "alpha-without": {
+   "overall": 2.07,
+   "n": 6,
+   "ci95": [
+    1.96,
+    2.2
+   ],
+   "per_case": {
+    "mcp-ecosystem-census": 2.04,
+    "vpn-tunnel-leak": 2.11
+   },
+   "per_dim": {
+    "D1": 1.5,
+    "D2": 1.67,
+    "D3": 3,
+    "D4": 1.33,
+    "D5": 1,
+    "D6": 3.83,
+    "D7": 1.17,
+    "D8": 1.83,
+    "D9": 3.33
+   }
+  },
+  "beta-with": {
+   "overall": 3.37,
+   "n": 6,
+   "ci95": [
+    3.26,
+    3.44
+   ],
+   "per_case": {
+    "mcp-ecosystem-census": 3.33,
+    "vpn-tunnel-leak": 3.41
+   },
+   "per_dim": {
+    "D1": 2.5,
+    "D2": 3.83,
+    "D3": 4,
+    "D4": 4.17,
+    "D5": 3.67,
+    "D6": 2.83,
+    "D7": 1.33,
+    "D8": 4.67,
+    "D9": 3.33
+   }
+  },
+  "beta-without": {
+   "overall": 1.91,
+   "n": 6,
+   "ci95": [
+    1.76,
+    2.06
+   ],
+   "per_case": {
+    "mcp-ecosystem-census": 1.85,
+    "vpn-tunnel-leak": 1.96
+   },
+   "per_dim": {
+    "D1": 1.5,
+    "D2": 1.17,
+    "D3": 2.83,
+    "D4": 1.67,
+    "D5": 1.5,
+    "D6": 2.33,
+    "D7": 1.17,
+    "D8": 2,
+    "D9": 3
+   }
+  }
+ },
+ "paired_delta": {
+  "alpha": 1.41,
+  "beta": 1.46
+ },
+ "reference_ceiling": {
+  "mcp-ecosystem-census": 3.48,
+  "vpn-tunnel-leak": 3.37
+ },
+ "problems": []
+}

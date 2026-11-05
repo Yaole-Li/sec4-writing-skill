@@ -102,6 +102,7 @@ sec4-writing-skill/
 ├── README.md / PAPER_LIST.md / CHANGELOG.md / NOTICE.md / LICENSE / install.sh
 ├── data/                       # papers.csv · split.json · corpus_stats.json · annotation_stats.json · census.json · annot/
 ├── tools/                      # 抽取、划分、统计、普查、范例库、标注合并（构建用）
+├── bench/                      # 第 ④ 层评测：run → blind pack → judge → score → leaderboard
 └── skills/security-conf-writing/
     ├── SKILL.md                # 入口：工作流与硬性规则
     ├── references/             # 15 篇规则文档 + corpus_stats.json + 范例库
@@ -111,6 +112,23 @@ sec4-writing-skill/
     ├── evals/                  # 2 个留出用例 × 13 判据 + rubric + score_outputs
     └── agents/openai.yaml
 ```
+
+## Benchmark（第 ④ 层：模型 × 有/无技能）
+
+`bench/` 复刻了参考项目只在网页上发布的那层评测，三件它没开源的东西都补上了：盲评包生成器、评委提示词与打分聚合。
+
+```bash
+python3 bench/selftest.py                 # 端到端自检（无需调用任何模型）
+python3 bench/run_case.py --case vpn-tunnel-leak --config opus-with   # 铺一次运行
+AGENT_CMD='<你的 agent CLI>' python3 bench/run_case.py --case vpn-tunnel-leak --config opus-with --agent "$AGENT_CMD"
+python3 bench/pack.py --case vpn-tunnel-leak --reference refs/original.txt   # 匿名成 A/B/C/D
+python3 bench/judge_stub.py --case vpn-tunnel-leak --judge judge-1           # 换成真实评委时替换这一步
+python3 bench/score_judgments.py && python3 bench/leaderboard.py
+```
+
+口径与参考项目一致：候选池包含**原始论文**作为上限，3 位评委盲评 D1–D9，配置得分是九个维度的均值再对评委与用例求平均，头条数字是**同一模型的配对差**（有技能 − 无技能）。产物：[`bench/leaderboard.html`](bench/leaderboard.html)、[`bench/scores.json`](bench/scores.json)，自检样例在 [`bench/demo/`](bench/demo/)。
+
+自检产出全部带 `SYNTHETIC` 标记，因为 `judge_stub.py` 只做确定性代理打分，用来证明流水线跑得通，不构成任何模型结论。
 
 ## 已知限制
 

@@ -14,3 +14,8 @@ data/corpus.jsonl
 data/text/
 data/annot/scratch/
 data/annot/seq_input.jsonl
+
+# Benchmark working data: runs, blind packs and judgments are regenerated, not committed.
+bench/runs/
+bench/packs/
+bench/judgments/

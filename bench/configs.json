@@ -1,0 +1,14 @@
+{
+ "cases": ["vpn-tunnel-leak", "mcp-ecosystem-census"],
+ "models": [
+  {"id": "opus", "label": "Claude Opus"},
+  {"id": "sonnet", "label": "Claude Sonnet"},
+  {"id": "sol", "label": "GPT-Sol"},
+  {"id": "astra", "label": "GPT-Astra"}
+ ],
+ "judges": ["judge-1", "judge-2", "judge-3"],
+ "dimensions": ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9"],
+ "settings": {"max_turns": 40, "timeout_seconds": 1500,
+              "allowed_tools": ["Read", "Glob", "Grep", "Skill", "Write", "Edit", "Bash"]},
+ "notes": "config id = <model>-<with|without>; the paired difference is the headline number"
+}

@@ -1,0 +1,27 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Judge output",
+ "type": "object",
+ "required": ["case", "judge", "scores", "ranking"],
+ "properties": {
+  "case": {"type": "string"},
+  "judge": {"type": "string"},
+  "synthetic": {"type": "boolean"},
+  "scores": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "object",
+    "required": ["D1","D2","D3","D4","D5","D6","D7","D8","D9"],
+    "properties": {
+     "D1":{"type":"integer","minimum":1,"maximum":5},"D2":{"type":"integer","minimum":1,"maximum":5},
+     "D3":{"type":"integer","minimum":1,"maximum":5},"D4":{"type":"integer","minimum":1,"maximum":5},
+     "D5":{"type":"integer","minimum":1,"maximum":5},"D6":{"type":"integer","minimum":1,"maximum":5},
+     "D7":{"type":"integer","minimum":1,"maximum":5},"D8":{"type":"integer","minimum":1,"maximum":5},
+     "D9":{"type":"integer","minimum":1,"maximum":5},
+     "note": {"type": "string"}
+    }
+   }
+  },
+  "ranking": {"type": "array", "items": {"type": "string"}}
+ }
+}

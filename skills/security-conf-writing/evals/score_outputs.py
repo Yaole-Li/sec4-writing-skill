@@ -67,8 +67,10 @@ def main(argv):
     tex = run_dir / "paper" / "main.tex"
     files = {
         "main.tex": tex.exists(),
-        "abstract": (run_dir / "paper" / "sec" / "0_abstract.tex").exists(),
-        "intro": (run_dir / "paper" / "sec" / "1_intro.tex").exists(),
+        "abstract": any((run_dir / "paper" / "sec" / n).exists()
+                        for n in ("abstract.tex", "0_abstract.tex")),
+        "intro": any((run_dir / "paper" / "sec" / n).exists()
+                     for n in ("introduction.tex", "1_intro.tex", "1_introduction.tex")),
         "pdf": (run_dir / "paper" / "main.pdf").exists(),
     }
     out["structure"] = files

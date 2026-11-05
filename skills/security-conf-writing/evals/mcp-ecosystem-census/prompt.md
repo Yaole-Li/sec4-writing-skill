@@ -9,7 +9,7 @@ allowed_tools: [Read, Glob, Grep, Skill, Write, Edit, Bash]
 
 要求：
 - 用 `template/SP` 的项目结构：把模板复制到工作目录的 `paper/`，不要改动模板样式。
-- 摘要写进 abstract 环境，引言写进 `paper/sec/1_intro.tex`，标题写进 `paper/main.tex`。
+- 摘要写进 `paper/sec/abstract.tex` 的 abstract 环境，引言写进 `paper/sec/introduction.tex`，标题写进 `paper/main.tex`。
 - 参考文献只用我给的 `refs.bib`（复制为 `paper/main.bib`）；缺的用 `[TODO: cite ...]`。
 - 给出 Ethics Considerations 与 Open Science 骨架（内容可留 `[TODO]`）。
 - 本机有 LaTeX，请编译出 `paper/main.pdf`；其他说明写进 `report.md`。

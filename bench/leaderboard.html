@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>security-conf-writing · leaderboard (synthetic)</title>
+<style>
+:root{--bg:#fbfbfa;--card:#fff;--ink:#17181c;--muted:#6b7280;--line:#e4e6eb;--gold:#b8860b;--accent:#0b5cad;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1c1f25;--ink:#e8eaef;--muted:#9aa3b2;--line:#2b303a;--accent:#6aa9ff;--gold:#e0b34a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif}
+main{max-width:980px;margin:0 auto;padding:36px 20px 80px}
+h1{font-size:24px;margin:0 0 6px}
+.sub{color:var(--muted);font-size:13.5px;margin:0 0 26px}
+.banner{background:var(--warn);color:#fff;padding:10px 14px;border-radius:10px;font-weight:600;margin:0 0 22px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.pos{color:#0a7d3f;font-weight:600}.neg{color:#b3261e;font-weight:600}
+.bar{display:inline-block;height:8px;border-radius:4px;vertical-align:middle;margin-right:6px}
+.wrap{margin:30px 0 0}
+h2{font-size:16px;margin:34px 0 10px}
+.note{color:var(--muted);font-size:13px;margin-top:10px}
+code{background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px}
+</style></head>
+<body><main>
+<h1>Does the skill move a draft closer to the published paper?</h1>
+<p class="sub">mean of D1-D9, pooled over judges and cases; headline = paired difference · cases: mcp-ecosystem-census, vpn-tunnel-leak ·
+judges per case: mcp-ecosystem-census: 3 · vpn-tunnel-leak: 3</p>
+<div class="banner">SYNTHETIC — at least one judgment came from judge_stub.py. These numbers prove the pipeline runs and say nothing about any model.</div>
+<table>
+<thead><tr><th>Model</th><th class="num">w/o skill</th><th></th><th class="num">w/ skill</th><th></th>
+<th class="num">Δ</th><th class="num">95% CI (w/ skill)</th></tr></thead>
+<tbody><tr><td>alpha</td><td class='num'>2.07</td><td class='num'><span class="bar" style="width:49px;background:var(--muted)"></span>2.07</td><td class='num'>3.48</td><td class='num'><span class="bar" style="width:83px;background:var(--accent)"></span>3.48</td><td class='num pos'>+1.41</td><td class='num'>3.37–3.59</td></tr><tr><td>beta</td><td class='num'>1.91</td><td class='num'><span class="bar" style="width:45px;background:var(--muted)"></span>1.91</td><td class='num'>3.37</td><td class='num'><span class="bar" style="width:80px;background:var(--accent)"></span>3.37</td><td class='num pos'>+1.46</td><td class='num'>3.26–3.44</td></tr></tbody>
+</table>
+<p class="note">A score of 5 means indistinguishable from the published paper, which is in the pool as a
+ceiling. The headline number is the paired difference: same model, same case, same facts.</p>
+
+<div class="wrap"><h2>Per dimension</h2>
+<table><thead><tr><th>Model</th><th>Skill</th><th class="num">D1</th><th class="num">D2</th><th class="num">D3</th><th class="num">D4</th><th class="num">D5</th><th class="num">D6</th><th class="num">D7</th><th class="num">D8</th><th class="num">D9</th></tr></thead>
+<tbody><tr><td>alpha</td><td>w/o</td><td class='num'>1.5</td><td class='num'>1.67</td><td class='num'>3</td><td class='num'>1.33</td><td class='num'>1</td><td class='num'>3.83</td><td class='num'>1.17</td><td class='num'>1.83</td><td class='num'>3.33</td></tr><tr><td>alpha</td><td>w/ </td><td class='num'>3</td><td class='num'>3.5</td><td class='num'>3.83</td><td class='num'>4.17</td><td class='num'>3.83</td><td class='num'>2.83</td><td class='num'>1.83</td><td class='num'>4.5</td><td class='num'>3.83</td></tr><tr><td>beta</td><td>w/o</td><td class='num'>1.5</td><td class='num'>1.17</td><td class='num'>2.83</td><td class='num'>1.67</td><td class='num'>1.5</td><td class='num'>2.33</td><td class='num'>1.17</td><td class='num'>2</td><td class='num'>3</td></tr><tr><td>beta</td><td>w/ </td><td class='num'>2.5</td><td class='num'>3.83</td><td class='num'>4</td><td class='num'>4.17</td><td class='num'>3.67</td><td class='num'>2.83</td><td class='num'>1.33</td><td class='num'>4.67</td><td class='num'>3.33</td></tr></tbody></table>
+<p class="note">D1 Threat model · D2 Gap and failing assumption · D3 Novelty of the object · D4 Evidence-calibrated claims · D5 Concreteness · D6 Positioning · D7 Ethics and artefacts · D8 Flow and economy · D9 Method and experiments</p></div>
+
+<div class="wrap"><h2>Per case</h2>
+<table><thead><tr><th>Model</th><th>Skill</th><th class="num">mcp-ecosystem-census</th><th class="num">vpn-tunnel-leak</th></tr></thead>
+<tbody><tr><td>alpha</td><td>w/o</td><td class='num'>2.04</td><td class='num'>2.11</td></tr><tr><td>alpha</td><td>w/ </td><td class='num'>3.48</td><td class='num'>3.48</td></tr><tr><td>beta</td><td>w/o</td><td class='num'>1.85</td><td class='num'>1.96</td></tr><tr><td>beta</td><td>w/ </td><td class='num'>3.33</td><td class='num'>3.41</td></tr></tbody></table>
+<p class="note">Published paper (ceiling), mean of D1–D9: mcp-ecosystem-census = 3.48 · vpn-tunnel-leak = 3.37</p></div>
+
+<p class="note">Regenerate: <code>python3 bench/score_judgments.py &amp;&amp; python3 bench/leaderboard.py</code></p>
+</main></body></html>

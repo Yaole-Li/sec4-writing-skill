@@ -19,3 +19,8 @@ First release, fitted on 268 security papers (S&P 95, USENIX 116, NDSS 57; 2023â
   `find_exemplars.py` (with `--venue` and `--abstracts`), `intake_to_brief.py`.
 - Four LaTeX templates (SP, NDSS, USENIX, CCS), each verified to compile twice with pdflatex.
 - Held-out evaluation: two cases with 13 graders each, a blind rubric and `score_outputs.py`.
+- `bench/`: the fourth evaluation layer (models x with/without skill). Run scaffolding, a keyed blind
+  pack generator, the judge prompt and JSON schema, a deterministic stub judge for self-testing, the
+  aggregator (mean of D1-D9, pooled over judges and cases, paired difference as the headline) and an
+  HTML leaderboard. `bench/selftest.py` runs the whole thing end to end without any model call; its
+  output is stamped SYNTHETIC.
